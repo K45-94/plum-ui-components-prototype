@@ -20,10 +20,7 @@
 <script>
 export default {
   data() {
-    return {
-      left: false,
-      right: false,
-    };
+    return {};
   },
 };
 </script>
@@ -33,5 +30,5 @@ export default {
   .q-tab_icon
     font-size: 24px
 .q-footer
-    background: linear-gradient(145deg,#363020 15%,#605c4E 85%)
+    background: linear-gradient(145deg,#272D2D 15%,#272D2D 85%)
 </style>

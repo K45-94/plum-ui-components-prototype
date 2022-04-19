@@ -19,9 +19,12 @@
 </template>
 
 <script>
+import store from "src/plumStore";
 export default {
-  data() {
-    return {};
+  setup() {
+    return {
+      store,
+    };
   },
 };
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <q-btn icon="chevron_left" color="primary" flat rounded dense no-caps />
+  <q-btn icon="chevron_left" color="black" flat rounded dense no-caps />
 </template>
 
 <script>

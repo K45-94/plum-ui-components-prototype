@@ -11,11 +11,122 @@
     </page-header>
     <page-body>
       <div class="q-pt-lg q-pb-md q-pl-lg q-pr-lg">
-        <p v-for="i in 30" :key="i">
-          Building Plum with vue 3. This app is getting complex and I thought I
-          could redesign and rebuild it better with Vue 3 Finally found a way
-          for nesting child pages in routes.
-        </p>
+        <div class="row q-col-gutter-lg">
+          <div class="col-12 col-sm-8">
+            <q-card flat>
+              <q-item v-for="account in accounts" :key="account.id">
+                <q-item-section avatar>
+                  <q-avatar color="secondary" text-color="white">
+                    {{ account.name.charAt(0) }}
+                  </q-avatar>
+                </q-item-section>
+
+                <q-item-section>
+                  <q-item-label class="text-bold">Plum Account</q-item-label>
+                  <q-item-label caption>@plumaccount</q-item-label>
+                </q-item-section>
+                <q-item-section class="col-4">
+                  <q-btn
+                    to="/profile/settings"
+                    class="absolute-right"
+                    unelevated
+                    rounded
+                    icon="eva-settings-2"
+                    flat
+                    dense
+                    color="secondary"
+                  />
+                </q-item-section>
+              </q-item>
+              <q-separator />
+              <div
+                class="row justify-between"
+                v-for="account in accounts"
+                :key="account.id"
+              >
+                <q-item-section>
+                  <q-item-label header>Phone No.</q-item-label>
+                  <q-item-label>{{ account.Tel }}</q-item-label>
+                </q-item-section>
+                <q-item-section>
+                  <q-item-label header>Email</q-item-label>
+                  <q-item-label>{{ account.Email }}</q-item-label>
+                </q-item-section>
+              </div>
+            </q-card>
+            <q-space class="q-pa-lg" />
+            <div class="text-bold">
+              <q-card flat>
+                <q-item>
+                  <q-item-section class="col-12">
+                    <q-banner inline-actions class="bg-primary">
+                      <template v-slot:action>
+                        <q-btn
+                          flat
+                          class="absolute-center text-white"
+                          label="Activities"
+                        />
+                      </template>
+                    </q-banner>
+                  </q-item-section>
+                </q-item>
+              </q-card>
+            </div>
+            <q-space class="q-pa-lg" />
+            <q-card>
+              <q-item v-for="account in accounts" :key="account.id">
+                <q-item-section avatar>
+                  <q-avatar color="primary" text-color="white"> C </q-avatar>
+                </q-item-section>
+                <q-item-section class="col-4">
+                  <q-item-label class="text-bold absolute-center"
+                    >Communication List</q-item-label
+                  >
+                </q-item-section>
+                <q-item-section class="col-4">
+                  <q-btn
+                    :ripple="true"
+                    class="absolute-right text-caption q-pa-sm q-ma-xs"
+                    flat
+                    dense
+                    to="/profile/users"
+                    push
+                    color="primary"
+                    text-color="black"
+                    label="Unread"
+                    no-caps
+                  >
+                    <q-badge color="primary" floating>22</q-badge>
+                  </q-btn>
+                </q-item-section>
+              </q-item>
+            </q-card>
+
+            <q-space class="q-pa-sm" />
+            <q-card>
+              <q-item>
+                <q-item-section avatar class="col-4">
+                  <q-avatar color="primary" text-color="white"> P </q-avatar>
+                </q-item-section>
+                <q-item-section class="col-4">
+                  <q-item-label class="text-bold absolute-center"
+                    >Payments</q-item-label
+                  >
+                </q-item-section>
+                <q-item-section class="col-4">
+                  <q-btn
+                    to="/profile/payments"
+                    class="absolute-right"
+                    icon="eva-arrow-ios-forward-outline"
+                    flat
+                    dense
+                    color="black"
+                  />
+                </q-item-section>
+              </q-item>
+            </q-card>
+          </div>
+        </div>
       </div>
     </page-body>
   </page>
@@ -31,5 +142,18 @@ import PageBody from "src/components/PagePlumComponent/PageBody.vue";
 export default defineComponent({
   components: { Page, PageHeader, PageBody, PageHeaderButtonBackRight },
   name: "PageProfile",
+  data() {
+    return {
+      accounts: [
+        {
+          id: 1,
+          name: "Plum Account",
+          Tel: "0727256611",
+          Email: "plumuser@plum.com",
+          Online: true,
+        },
+      ],
+    };
+  },
 });
 </script>

@@ -8,11 +8,109 @@
     </page-header>
     <page-body>
       <div class="q-pt-lg q-pb-md q-pl-lg q-pr-lg">
-        <p v-for="i in 30" :key="i">
-          Building Plum with vue 3. This app is getting complex and I thought I
-          could redesign and rebuild it better with Vue 3 Finally found a way
-          for nesting child pages in routes.
-        </p>
+        <div class="row q-col-gutter-lg">
+          <div class="col-12 col-sm-8">
+            <q-card flat>
+              <q-item>
+                <q-item-section class="col-4">
+                  <q-item-label class="text-bold center-left"
+                    >Notifications</q-item-label
+                  >
+                </q-item-section>
+                <q-item-section class="col-4">
+                  <q-toggle
+                    :label="NotificationsToggle"
+                    color="secondary"
+                    false-value="Off"
+                    true-value="On"
+                    v-model="NotificationsToggle"
+                    class="absolute-right text-caption"
+                  />
+                </q-item-section>
+              </q-item>
+            </q-card>
+            <q-space class="q-pa-sm" />
+            <q-card flat>
+              <q-item>
+                <q-item-section class="col-4">
+                  <q-item-label class="text-bold center-left"
+                    >Security</q-item-label
+                  >
+                </q-item-section>
+                <q-item-section class="col-4">
+                  <q-btn
+                    to="/security"
+                    class="absolute-right"
+                    icon="eva-arrow-ios-forward-outline"
+                    flat
+                    dense
+                    color="black"
+                  />
+                </q-item-section>
+              </q-item>
+            </q-card>
+            <q-space class="q-pa-sm" />
+            <q-card flat>
+              <q-item>
+                <q-item-section class="col-4">
+                  <q-item-label class="text-bold center-left"
+                    >Themes</q-item-label
+                  >
+                </q-item-section>
+                <q-item-section class="col-4">
+                  <q-toggle
+                    :label="ThemeToggle"
+                    color="dark"
+                    false-value="Off"
+                    true-value="On"
+                    v-model="ThemeToggle"
+                    class="absolute-right text-caption"
+                  />
+                </q-item-section>
+              </q-item>
+            </q-card>
+            <q-space class="q-pa-sm" />
+            <q-card flat>
+              <q-item>
+                <q-item-section class="col-4">
+                  <q-item-label class="text-bold center-left"
+                    >Help n Support</q-item-label
+                  >
+                </q-item-section>
+                <q-item-section class="col-4">
+                  <q-btn
+                    to="/help"
+                    class="absolute-right"
+                    icon="eva-arrow-ios-forward-outline"
+                    flat
+                    dense
+                    color="black"
+                  />
+                </q-item-section>
+              </q-item>
+            </q-card>
+            <q-space class="q-pa-sm" />
+            <q-card flat>
+              <q-item>
+                <q-item-section class="col-4">
+                  <q-item-label class="text-bold center-left"
+                    >About Plum</q-item-label
+                  >
+                </q-item-section>
+                <q-item-section class="col-4">
+                  <q-btn
+                    to="/about"
+                    class="absolute-right"
+                    icon="eva-arrow-ios-forward-outline"
+                    flat
+                    dense
+                    color="black"
+                  />
+                </q-item-section>
+              </q-item>
+            </q-card>
+          </div>
+        </div>
       </div>
     </page-body>
   </page>
@@ -27,5 +125,20 @@ import { defineComponent } from "vue";
 export default defineComponent({
   components: [Page, PageHeader, PageHeaderButtonBackLeft],
   name: "PageSettings",
+  data() {
+    return {
+      accounts: [
+        {
+          id: 1,
+          name: "Plum Account",
+          Tel: "0727256611",
+          Email: "plumuser@plumaccount.com",
+          Status: true,
+        },
+      ],
+      NotificationsToggle: "On",
+      ThemeToggle: "Dark",
+    };
+  },
 });
 </script>

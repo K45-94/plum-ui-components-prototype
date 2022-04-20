@@ -107,7 +107,7 @@
                             />
                             <q-btn
                               class="q-mt-lg q-ml-lg q-mb-lg shadow-10"
-                              to="/payments"
+                              to="/profile/payments"
                               rounded
                               color="secondary"
                               text-color="black"

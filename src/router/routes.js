@@ -33,8 +33,16 @@ const routes = [
           },
           {
             path: "/profile/payments",
-            component: () => import("src/pages/profile/PagePayments.vue"),
+            component: () =>
+              import("src/pages/profile/payments/PagePayments.vue"),
             name: "Payments",
+            children: [
+              {
+                path: "/profile/payments/mpesawallet",
+                component: () => import("pages/profile/payments/PageMpesa.vue"),
+                name: "mpesawallet",
+              },
+            ],
           },
           {
             path: "/profile/users",

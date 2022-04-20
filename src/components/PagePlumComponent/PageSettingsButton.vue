@@ -1,9 +1,9 @@
 <template>
   <q-btn
+    icon="eva-settings-2"
     class="absolute-right"
     unelevated
     rounded
-    icon="eva-settings-2"
     flat
     dense
     color="primary"

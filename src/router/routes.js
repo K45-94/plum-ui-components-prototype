@@ -31,6 +31,11 @@ const routes = [
             path: "/profile/settings",
             component: () => import("src/pages/profile/PageSettings.vue"),
           },
+          {
+            path: "/profile/payments",
+            component: () => import("src/pages/profile/PagePayments.vue"),
+            name: "Payments",
+          },
         ],
       },
     ],

@@ -36,6 +36,18 @@ const routes = [
             component: () => import("src/pages/profile/PagePayments.vue"),
             name: "Payments",
           },
+          {
+            path: "/profile/users",
+            component: () => import("src/pages/profile/PageUsers.vue"),
+            name: "Users",
+            children: [
+              {
+                path: "/profile/users/chat",
+                component: () => import("src/pages/profile/PageChat.vue"),
+                name: "Chat",
+              },
+            ],
+          },
         ],
       },
     ],

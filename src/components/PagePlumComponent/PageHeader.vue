@@ -3,14 +3,14 @@
     class="page-header q-header q-layout__section--marginal fixed-top text-secondary"
   >
     <div
-      class="q-toolbar row no-wrap items-center text-black"
+      class="q-toolbar row no-wrap items-center text-white"
       active-color="secondary"
     >
       <slot name="button-left" />
       <div
         class="page-header-title q-toolbar__title ellipsis q-pl-none q-ml-md text-weight-light text-white text-center text-body1"
       >
-        <span class="q-pa-md text-black">
+        <span class="q-pa-md text-white">
           <slot name="title" />
           <i class="q-icon q-pa-md" aria-hidden="true" role="presentation"
             ><svg
@@ -109,7 +109,7 @@ export default {
 
 <style lang="sass">
 .q-header
-    background: linear-gradient(145deg,#CCC5B9 15%,#CCC5B9 85%)
+    background: linear-gradient(145deg,#272D2D 15%,#272D2D 85%)
 .q-toolbar
   @media (min-width: $breakpoint-sm-min)
     height: 77px

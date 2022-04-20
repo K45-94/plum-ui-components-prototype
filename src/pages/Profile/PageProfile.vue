@@ -16,7 +16,7 @@
             <q-card flat>
               <q-item v-for="account in accounts" :key="account.id">
                 <q-item-section avatar>
-                  <q-avatar color="secondary" text-color="white">
+                  <q-avatar color="primary" text-color="white">
                     {{ account.name.charAt(0) }}
                   </q-avatar>
                 </q-item-section>
@@ -34,7 +34,7 @@
                     icon="eva-settings-2"
                     flat
                     dense
-                    color="secondary"
+                    color="primary"
                   />
                 </q-item-section>
               </q-item>
@@ -63,7 +63,7 @@
                       <template v-slot:action>
                         <q-btn
                           flat
-                          class="absolute-center text-white"
+                          class="absolute-center text-secondary"
                           label="Activities"
                         />
                       </template>
@@ -157,3 +157,8 @@ export default defineComponent({
   },
 });
 </script>
+
+<style lang="sass">
+.q-card
+  background: linear-gradient(90deg,#CCC5B9 79%,#CCC5B9 15%)
+</style>

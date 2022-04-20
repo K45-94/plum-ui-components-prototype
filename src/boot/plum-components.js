@@ -9,6 +9,8 @@ const plumComponents = {
     require("components/PagePlumComponent/PageHeaderButtonForwardRight")
       .default,
   pageBody: require("components/PagePlumComponent/PageBody").default,
+  pageSettingsButton: require("components/PagePlumComponent/PageSettingsButton")
+    .default,
 };
 
 export default boot(async ({ app }) => {

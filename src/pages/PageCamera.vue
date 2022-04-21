@@ -1,7 +1,83 @@
 <template>
   <page>
     <page-header> <template #title> CAMERA </template></page-header>
-    <page-body></page-body>
+    <page-body>
+      <div class="camera-frame q-pa-md">
+        <video
+          v-show="!imageCaptured"
+          ref="video"
+          class="full-width"
+          autoplay
+        />
+        <canvas
+          v-show="imageCaptured"
+          ref="canvas"
+          class="full-width"
+          height="240"
+        />
+      </div>
+      <div class="text-center q-pa-md">
+        <q-btn
+          v-if="hasCameraSupport"
+          @click="captureImage"
+          round
+          color="blue-grey"
+          icon="camera"
+        />
+        <q-file
+          v-else
+          label="choose image"
+          @input="captureImageFallback"
+          outlined
+          accept="image/"
+          v-model="imageUpload"
+        >
+          <template v-slot:prepend>
+            <q-icon name="eva-attach-outline" />
+          </template>
+        </q-file>
+        <div class="row justify-center q-ma-md">
+          <q-input
+            v-model="post.caption"
+            class="col col-sm-6"
+            placeholder="Caption"
+            dense
+          />
+        </div>
+        <div class="row justify-center q-ma-md">
+          <q-input
+            v-model="post.location"
+            :loading="locationLoading"
+            class="col col-sm-6"
+            placeholder="Location"
+            dense
+          >
+            <template v-slot:append>
+              <q-btn
+                v-if="!locationLoading"
+                @click="getLocation"
+                color="black"
+                round
+                dense
+                flat
+                icon="eva-navigation-2-outline"
+              />
+            </template>
+          </q-input>
+        </div>
+        <div class="row justify-center q-mt-lg">
+          <q-btn
+            class="shadow-4"
+            @click="addPost()"
+            color="secondary"
+            label="Post"
+            rounded
+            unelevated
+            no-caps
+          />
+        </div>
+      </div>
+    </page-body>
   </page>
 </template>
 

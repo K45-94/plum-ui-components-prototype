@@ -11,6 +11,8 @@ const plumComponents = {
   pageBody: require("components/PagePlumComponent/PageBody").default,
   pageSettingsButton: require("components/PagePlumComponent/PageSettingsButton")
     .default,
+  pageButtonBackError:
+    require("components/PagePlumComponent/PageButtonBackError").default,
 };
 
 export default boot(async ({ app }) => {

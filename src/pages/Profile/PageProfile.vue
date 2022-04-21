@@ -2,12 +2,6 @@
   <page>
     <page-header>
       <template #title> PROFILE </template>
-      <template #button-right>
-        <page-header-button-forward-right
-          to="/profile/settings"
-          label="settings"
-        />
-      </template>
     </page-header>
     <page-body>
       <div class="q-pt-lg q-pb-md q-pl-lg q-pr-lg">
@@ -134,7 +128,6 @@
 import { defineComponent } from "vue";
 import Page from "src/components/PagePlumComponent/Page.vue";
 import PageHeader from "src/components/PagePlumComponent/PageHeader.vue";
-import PageHeaderButtonForwardRight from "src/components/PagePlumComponent/PageHeaderButtonForwardRight.vue";
 import PageBody from "src/components/PagePlumComponent/PageBody.vue";
 
 export default defineComponent({
@@ -142,7 +135,6 @@ export default defineComponent({
     Page,
     PageHeader,
     PageBody,
-    PageHeaderButtonForwardRight,
   },
   name: "PageProfile",
   data() {

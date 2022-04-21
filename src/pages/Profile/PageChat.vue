@@ -2,7 +2,7 @@
   <page>
     <page-header>
       <template #button-left>
-        <page-header-button-back-left to="/profile/users" label="chats" />
+        <page-header-button-back-left label="chats" />
       </template>
       <template #title> CHAT-ID </template>
     </page-header>

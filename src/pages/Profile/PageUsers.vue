@@ -2,7 +2,7 @@
   <page>
     <page-header>
       <template #button-left>
-        <page-header-button-back-left to="/profile" label="profile" />
+        <page-header-button-back-left label="profile" />
       </template>
       <template #title> CHATS </template>
     </page-header>

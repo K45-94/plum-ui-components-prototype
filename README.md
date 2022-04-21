@@ -2,6 +2,7 @@
 
 Here, I will attempt to build as many individual components as I could. It could take a couple of weeks to do so.
 Optimizing mobile/small-screen view before we jump to large-screen view.
+The user can swipe to go back using mouse or touch.
 Contact through kelvinhiuhu@live.com
 
 Also, check out the initial Plum from here => https://github.com/K45-94/plum-frontend-backend

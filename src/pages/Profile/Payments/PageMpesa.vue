@@ -2,7 +2,7 @@
   <page>
     <page-header>
       <template #button-left>
-        <page-header-button-back-left to="/profile/payments" label="payments" />
+        <page-header-button-back-left label="payments" />
       </template>
       <template #title> MPESA </template>
     </page-header>

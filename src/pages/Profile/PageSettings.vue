@@ -2,7 +2,7 @@
   <page>
     <page-header>
       <template #button-left>
-        <page-header-button-back-left to="/profile" label="profile" />
+        <page-header-button-back-left label="profile" />
       </template>
       <template #title> SETTINGS </template>
     </page-header>
@@ -136,8 +136,8 @@ export default defineComponent({
           Status: true,
         },
       ],
-      NotificationsToggle: "On",
-      ThemeToggle: "Dark",
+      NotificationsToggle: "Off",
+      ThemeToggle: "Off",
     };
   },
 });

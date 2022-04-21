@@ -1,11 +1,11 @@
 <template>
   <div
-    class="fullscreen bg-warning text-white text-center q-pa-md flex flex-center"
+    class="fullscreen bg-warning text-black text-center q-pa-md flex flex-center"
   >
     <div>
       <div style="font-size: 30vh">404</div>
 
-      <div class="text-h2" style="opacity: 0.4">Oops. Nothing here...</div>
+      <div class="text-h2" style="opacity: 0.4">Oops. No Plums here...</div>
       <div>
         <page-button-back-error label="Go Back" />
       </div>

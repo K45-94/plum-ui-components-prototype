@@ -3,7 +3,7 @@
     <page-header>
       <template #title> PROFILE </template>
       <template #button-right>
-        <page-header-button-back-right
+        <page-header-button-forward-right
           to="/profile/settings"
           label="settings"
         />
@@ -26,9 +26,14 @@
                   <q-item-label caption>@plumaccount</q-item-label>
                 </q-item-section>
                 <q-item-section class="col-4">
-                  <template #button-settings>
-                    <page-settings-button to="/profile/settings" />
-                  </template>
+                  <q-btn
+                    to="/profile/settings"
+                    class="absolute-right"
+                    icon="eva-settings-2"
+                    flat
+                    dense
+                    color="primary"
+                  />
                 </q-item-section>
               </q-item>
               <q-separator />
@@ -129,17 +134,15 @@
 import { defineComponent } from "vue";
 import Page from "src/components/PagePlumComponent/Page.vue";
 import PageHeader from "src/components/PagePlumComponent/PageHeader.vue";
-import PageHeaderButtonBackRight from "src/components/PagePlumComponent/PageHeaderButtonForwardRight.vue";
+import PageHeaderButtonForwardRight from "src/components/PagePlumComponent/PageHeaderButtonForwardRight.vue";
 import PageBody from "src/components/PagePlumComponent/PageBody.vue";
-import PageSettingsButton from "src/components/PagePlumComponent/PageSettingsButton.vue";
 
 export default defineComponent({
   components: {
     Page,
     PageHeader,
     PageBody,
-    PageHeaderButtonBackRight,
-    PageSettingsButton,
+    PageHeaderButtonForwardRight,
   },
   name: "PageProfile",
   data() {

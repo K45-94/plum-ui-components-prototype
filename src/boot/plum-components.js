@@ -13,6 +13,9 @@ const plumComponents = {
     .default,
   pageButtonBackError:
     require("components/PagePlumComponent/PageButtonBackError").default,
+  plumMpesaSendMoneyFormComponent:
+    require("components/PagePlumComponent/PlumMpesaSendMoneyFormComponent")
+      .default,
 };
 
 export default boot(async ({ app }) => {

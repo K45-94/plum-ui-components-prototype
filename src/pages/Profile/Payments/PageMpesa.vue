@@ -22,7 +22,7 @@
                 </q-item-section>
                 <q-item-section class="col-4">
                   <q-btn
-                    to="/sendMoney"
+                    to="/profile/payments/mpesawallet/sendmpesa"
                     class="absolute-right"
                     icon="eva-arrow-ios-forward-outline"
                     flat

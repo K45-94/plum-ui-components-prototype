@@ -41,6 +41,14 @@ const routes = [
                 path: "/profile/payments/mpesawallet",
                 component: () => import("pages/profile/payments/PageMpesa.vue"),
                 name: "mpesawallet",
+                children: [
+                  {
+                    path: "/profile/payments/mpesawallet/sendmpesa",
+                    component: () =>
+                      import("pages/profile/payments/PageSendMpesa.vue"),
+                    name: "sendmpesa",
+                  },
+                ],
               },
             ],
           },

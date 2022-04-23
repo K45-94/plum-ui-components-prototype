@@ -109,7 +109,7 @@ export default {
 
 <style lang="sass">
 .q-header
-    background: linear-gradient(145deg,#272D2D 15%,#272D2D 85%)
+    background: linear-gradient(145deg,#4A180E 15%,#4A180E 85%)
 .q-toolbar
   @media (min-width: $breakpoint-sm-min)
     height: 77px

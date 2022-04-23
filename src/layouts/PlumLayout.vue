@@ -34,5 +34,5 @@ export default {
   .q-tab_icon
     font-size: 24px
 .q-footer
-    background: linear-gradient(145deg,#272D2D 15%,#272D2D 85%)
+    background: linear-gradient(145deg,#4A180E 15%,#4A180E 85%)
 </style>

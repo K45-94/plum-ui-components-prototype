@@ -4,7 +4,7 @@
       v-model="formData.phoneNumber"
       class="q-mb-md"
       outlined
-      type="tel"
+      type="number"
       label="Phone Number"
     />
     <q-input
@@ -16,15 +16,26 @@
     />
     <div class="row">
       <q-space />
-      <q-btn color="primary" @click="submitForm" label="send money" />
+      <q-btn
+        color="primary"
+        class="text-secondary"
+        @click="submitForm"
+        label="send money"
+      />
     </div>
   </q-form>
 </template>
 
 <script>
+import { ref } from "vue";
 export default {
   name: "PlumMpesaSendMoneyFormComponent",
-  props: ["tab"],
+
+  setup() {
+    return {
+      tab: ref("sendmoney"),
+    };
+  },
   data() {
     return {
       formData: {

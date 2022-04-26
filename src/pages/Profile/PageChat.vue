@@ -11,11 +11,12 @@
         <div class="page-chat flex column constrain-more">
           <div class="q-pa-md column col justify-end">
             <q-chat-message
+              class="q-pb-sm q-mb-sm"
               v-for="(message, key) in messages"
               :key="key"
               :text="[message.text]"
               :sent="message.from == 'me' ? true : false"
-              :bg-color="message.from == 'me' ? 'primary' : 'secondary'"
+              :bg-color="message.from == 'me' ? 'brown-14' : 'grey-2'"
               :text-color="message.from == 'me' ? 'white' : 'black'"
             />
           </div>
@@ -124,6 +125,7 @@
                       class="q-pr-sm q-pl-sm shadow-4"
                       dense
                       flat
+                      unelevated
                       align="right"
                       @click="sendMessage"
                       color="secondary"

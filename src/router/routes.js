@@ -9,7 +9,13 @@ const routes = [
       },
       {
         path: "/feeds",
-        component: () => import("src/pages/PageFeeds.vue"),
+        component: () => import("src/pages/Feeds/PageFeeds.vue"),
+        children: [
+          {
+            path: "/feeds/:id",
+            component: () => import("src/pages/Feeds/PagePost.vue"),
+          },
+        ],
       },
       {
         path: "/search",

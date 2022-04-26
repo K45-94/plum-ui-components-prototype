@@ -21,6 +21,7 @@
 <script>
 import Page from "src/components/PagePlumComponent/Page.vue";
 import PageHeaderButtonBackLeft from "src/components/PagePlumComponent/PageHeaderButtonBackLeft.vue";
+import { onActivated } from "vue";
 import store from "src/plumStore";
 import { defineComponent } from "vue";
 
@@ -28,6 +29,9 @@ export default defineComponent({
   components: { Page, PageHeaderButtonBackLeft },
   name: "PagePost",
   setup() {
+    onActivated(() => {
+      console.log(onActivated);
+    });
     return {
       store,
     };

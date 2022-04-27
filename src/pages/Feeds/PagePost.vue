@@ -7,13 +7,30 @@
       <template #title> POST </template>
     </page-header>
     <page-body>
-      <div class="q-pt-lg q-pb-md q-pl-lg q-pr-lg">
-        <p v-for="i in 30" :key="i">
-          Building Plum with vue 3. This app is getting complex and I thought I
-          could redesign and rebuild it better with Vue 3 Finally found a way
-          for nesting child pages in routes.
-        </p>
-      </div>
+      <transition
+        appear
+        enter-active-class="animated fadeIn slower"
+        leave-active-class="animated fadeOut slower"
+      >
+        <div class="q-pt-lg q-pb-md q-pl-lg q-pr-lg">
+          <div v-if="feed">
+            <q-img
+              :src="feed.url"
+              no-spinner
+              no-transition
+              class="no-pointer-events"
+            />
+            <div class="q-pa-md">
+              <div class="text-h5 q-mb-md">{{ feed.caption }}</div>
+              <p v-for="i in 5" :key="i">
+                Building Plum with vue 3. This app is getting complex and I
+                thought I could redesign and rebuild it better with Vue 3
+                Finally found a way for nesting child pages in routes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </transition>
     </page-body>
   </page>
 </template>
@@ -21,7 +38,8 @@
 <script>
 import Page from "src/components/PagePlumComponent/Page.vue";
 import PageHeaderButtonBackLeft from "src/components/PagePlumComponent/PageHeaderButtonBackLeft.vue";
-import { onActivated } from "vue";
+import { onActivated, onDeactivated, ref } from "vue";
+import { useRoute } from "vue-router";
 import store from "src/plumStore";
 import { defineComponent } from "vue";
 
@@ -29,11 +47,19 @@ export default defineComponent({
   components: { Page, PageHeaderButtonBackLeft },
   name: "PagePost",
   setup() {
+    let feed = ref();
     onActivated(() => {
-      console.log(onActivated);
+      let route = useRoute();
+
+      feed.value = store.getters.getFeed(route.params.id);
+    });
+
+    onDeactivated(() => {
+      feed.value = null;
     });
     return {
       store,
+      feed,
     };
   },
 });

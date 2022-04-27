@@ -89,8 +89,15 @@ const state = reactive({
   usePageTransition: true,
 });
 
+const getters = {
+  getFeed(feedId) {
+    return state.feeds.filter((feed) => feed.id === feedId)[0];
+  },
+};
+
 const store = {
   state,
+  getters,
 };
 
 export default store;

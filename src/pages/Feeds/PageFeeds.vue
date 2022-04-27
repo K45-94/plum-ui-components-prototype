@@ -11,7 +11,7 @@
           :to="`/feeds/${feeds.id}`"
           class="col-11 q-ma-sm q-pr-none q-pl-lg"
         >
-          <q-img :src="feeds.url" :ratio="4 / 3" />
+          <q-img :src="feeds.url" :ratio="1" />
         </router-link></div
     ></page-body>
   </page>

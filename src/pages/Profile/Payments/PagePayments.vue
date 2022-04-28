@@ -9,7 +9,7 @@
     <page-body>
       <div class="q-pt-lg q-pb-md q-pl-lg q-pr-lg">
         <div class="col-12 col-sm-8">
-          <q-card>
+          <q-card class="inset-shadow inset-shadow-down">
             <q-item>
               <q-item-section avatar class="col-4">
                 <q-avatar color="secondary" text-color="white"> M </q-avatar>
@@ -34,7 +34,7 @@
             </q-item>
           </q-card>
           <q-space class="q-pa-sm" />
-          <q-card>
+          <q-card class="inset-shadow inset-shadow-down">
             <q-item>
               <q-item-section avatar class="col-4">
                 <q-avatar color="secondary" text-color="white"> A </q-avatar>
@@ -57,7 +57,7 @@
             </q-item>
           </q-card>
           <q-space class="q-pa-sm" />
-          <q-card>
+          <q-card class="inset-shadow inset-shadow-down">
             <q-item>
               <q-item-section avatar class="col-4">
                 <q-avatar color="secondary" text-color="white"> T </q-avatar>
@@ -80,7 +80,7 @@
             </q-item>
           </q-card>
           <q-space class="q-pa-sm" />
-          <q-card>
+          <q-card class="inset-shadow inset-shadow-down">
             <q-item>
               <q-item-section avatar class="col-4">
                 <q-avatar color="secondary" text-color="white"> PP </q-avatar>
@@ -106,7 +106,7 @@
           </q-card>
 
           <q-space class="q-pa-sm" />
-          <q-card>
+          <q-card class="inset-shadow inset-shadow-down">
             <q-item>
               <q-item-section avatar class="col-4">
                 <q-avatar color="secondary" text-color="white"> P </q-avatar>

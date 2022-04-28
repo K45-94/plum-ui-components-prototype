@@ -12,7 +12,7 @@
           <q-item
             v-for="user in store.state.users"
             :key="user.id"
-            to="/profile/users/chat"
+            :to="`/profile/users/${user.id}`"
             clickable
             v-ripple
           >
@@ -33,6 +33,7 @@
               <q-badge rounded :color="user.online ? 'positive' : 'negative'" />
             </q-item-section>
           </q-item>
+
           <q-page-sticky position="bottom-right" :offset="[20, 60]">
             <q-btn fab icon="add" color="primary" />
           </q-page-sticky>

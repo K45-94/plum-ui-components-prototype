@@ -64,7 +64,7 @@ const routes = [
             name: "Users",
             children: [
               {
-                path: "/profile/users/chat",
+                path: "/profile/users/:id",
                 component: () => import("src/pages/profile/PageChat.vue"),
                 name: "Chat",
               },

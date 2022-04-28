@@ -65,7 +65,7 @@
               </q-card>
             </div>
             <q-space class="q-pa-lg" />
-            <q-card>
+            <q-card class="inset-shadow inset-shadow-down">
               <q-item v-for="account in accounts" :key="account.id">
                 <q-item-section avatar>
                   <q-avatar color="primary" text-color="white"> C </q-avatar>
@@ -95,7 +95,7 @@
             </q-card>
 
             <q-space class="q-pa-sm" />
-            <q-card>
+            <q-card class="inset-shadow inset-shadow-down">
               <q-item>
                 <q-item-section avatar class="col-4">
                   <q-avatar color="primary" text-color="white"> P </q-avatar>

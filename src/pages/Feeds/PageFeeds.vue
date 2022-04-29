@@ -62,4 +62,8 @@ export default defineComponent({
     left: 49%
     transform: translateX(-51%)
     background-image: linear-gradient(90deg,#CCC5B9 79%,#CCC5B9 15%)
+    border-top-left-radius: 20px
+    border-top-right-radius: 10px
+    border-bottom-right-radius: 20px
+    border-bottom-left-radius: 10px
 </style>

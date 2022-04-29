@@ -9,8 +9,8 @@
     <page-body>
       <div class="q-pt-lg q-pb-md q-pl-lg q-pr-lg">
         <div class="col-12 col-sm-8">
-          <q-card class="inset-shadow inset-shadow-down">
-            <q-item>
+          <q-list class="full-width">
+            <q-item to="/profile/payments/mpesawallet" clickable>
               <q-item-section avatar class="col-4">
                 <q-avatar color="secondary" text-color="white"> M </q-avatar>
               </q-item-section>
@@ -32,10 +32,8 @@
                 </q-btn>
               </q-item-section>
             </q-item>
-          </q-card>
-          <q-space class="q-pa-sm" />
-          <q-card class="inset-shadow inset-shadow-down">
-            <q-item>
+            <q-space class="q-pa-sm" />
+            <q-item to="/AirtelWallet" clickable>
               <q-item-section avatar class="col-4">
                 <q-avatar color="secondary" text-color="white"> A </q-avatar>
               </q-item-section>
@@ -55,10 +53,8 @@
                 />
               </q-item-section>
             </q-item>
-          </q-card>
-          <q-space class="q-pa-sm" />
-          <q-card class="inset-shadow inset-shadow-down">
-            <q-item>
+            <q-space class="q-pa-sm" />
+            <q-item to="/TelkomWallet" clickable>
               <q-item-section avatar class="col-4">
                 <q-avatar color="secondary" text-color="white"> T </q-avatar>
               </q-item-section>
@@ -78,10 +74,8 @@
                 />
               </q-item-section>
             </q-item>
-          </q-card>
-          <q-space class="q-pa-sm" />
-          <q-card class="inset-shadow inset-shadow-down">
-            <q-item>
+            <q-space class="q-pa-sm" />
+            <q-item to="/PayPalWallet" clickable>
               <q-item-section avatar class="col-4">
                 <q-avatar color="secondary" text-color="white"> PP </q-avatar>
               </q-item-section>
@@ -103,11 +97,9 @@
                 </q-btn>
               </q-item-section>
             </q-item>
-          </q-card>
 
-          <q-space class="q-pa-sm" />
-          <q-card class="inset-shadow inset-shadow-down">
-            <q-item>
+            <q-space class="q-pa-sm" />
+            <q-item to="/Pesalink" clickable>
               <q-item-section avatar class="col-4">
                 <q-avatar color="secondary" text-color="white"> P </q-avatar>
               </q-item-section>
@@ -129,7 +121,7 @@
                 </q-btn>
               </q-item-section>
             </q-item>
-          </q-card>
+          </q-list>
         </div>
       </div>
     </page-body>

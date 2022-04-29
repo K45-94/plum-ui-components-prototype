@@ -10,8 +10,8 @@
       <div class="constrain q-pt-lg q-pb-md q-pl-lg q-pr-lg">
         <div class="row q-col-gutter-lg">
           <div class="col-12 col-sm-8">
-            <q-card>
-              <q-item>
+            <q-list class="full-width">
+              <q-item to="/profile/payments/mpesawallet/sendmpesa" clickable>
                 <q-item-section avatar class="col-4">
                   <q-avatar color="secondary" text-color="white"> SM </q-avatar>
                 </q-item-section>
@@ -31,10 +31,8 @@
                   />
                 </q-item-section>
               </q-item>
-            </q-card>
-            <q-space class="q-pa-sm" />
-            <q-card>
-              <q-item>
+              <q-space class="q-pa-sm" />
+              <q-item to="/withdrawCash" clickable>
                 <q-item-section avatar class="col-4">
                   <q-avatar color="secondary" text-color="white"> WC </q-avatar>
                 </q-item-section>
@@ -54,10 +52,8 @@
                   />
                 </q-item-section>
               </q-item>
-            </q-card>
-            <q-space class="q-pa-sm" />
-            <q-card>
-              <q-item>
+              <q-space class="q-pa-sm" />
+              <q-item to="/TelkomWallet" clickable>
                 <q-item-section avatar class="col-4">
                   <q-avatar color="secondary" text-color="white"> LM </q-avatar>
                 </q-item-section>
@@ -77,10 +73,8 @@
                   />
                 </q-item-section>
               </q-item>
-            </q-card>
-            <q-space class="q-pa-sm" />
-            <q-card>
-              <q-item>
+              <q-space class="q-pa-sm" />
+              <q-item to="/PayPalWallet" clickable>
                 <q-item-section avatar class="col-4">
                   <q-avatar color="secondary" text-color="white"> B </q-avatar>
                 </q-item-section>
@@ -100,7 +94,7 @@
                   />
                 </q-item-section>
               </q-item>
-            </q-card>
+            </q-list>
           </div>
         </div>
       </div>

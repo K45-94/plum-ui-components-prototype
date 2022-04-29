@@ -12,7 +12,7 @@
         enter-active-class="animated fadeIn slower"
         leave-active-class="animated fadeOut slower"
       >
-        <div class="q-pt-lg q-pb-md q-pl-lg q-pr-lg">
+        <div class="q-pt-lg q-pb-md q-pl-md q-pr-md">
           <div v-if="feed">
             <q-img
               :src="feed.url"

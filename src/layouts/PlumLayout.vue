@@ -1,6 +1,6 @@
 <template>
   <q-layout view="lHh lpr lFf lHr lpR fFf" class="shadow-2 rounded-borders">
-    <q-page-container class="bg-white">
+    <q-page-container>
       <q-footer class="small-screen-only" bordered>
         <q-tabs class="text-white" active-color="secondary">
           <q-route-tab
@@ -35,4 +35,6 @@ export default {
     font-size: 24px
 .q-footer
     background: linear-gradient(145deg,#4A180E 15%,#4A180E 85%)
+.q-page-container
+  background: linear-gradient(145deg,#4A180E 15%,#4A180E 85%)
 </style>

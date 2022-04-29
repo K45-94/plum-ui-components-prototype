@@ -65,8 +65,8 @@
               </q-card>
             </div>
             <q-space class="q-pa-lg" />
-            <q-card class="inset-shadow inset-shadow-down">
-              <q-item v-for="account in accounts" :key="account.id">
+            <q-list class="full-width">
+              <q-item to="/profile/users" clickable>
                 <q-item-section avatar>
                   <q-avatar color="primary" text-color="white"> C </q-avatar>
                 </q-item-section>
@@ -92,11 +92,10 @@
                   </q-btn>
                 </q-item-section>
               </q-item>
-            </q-card>
 
-            <q-space class="q-pa-sm" />
-            <q-card class="inset-shadow inset-shadow-down">
-              <q-item>
+              <q-space class="q-pa-sm" />
+
+              <q-item to="/profile/payments" clickable>
                 <q-item-section avatar class="col-4">
                   <q-avatar color="primary" text-color="white"> P </q-avatar>
                 </q-item-section>
@@ -116,7 +115,7 @@
                   />
                 </q-item-section>
               </q-item>
-            </q-card>
+            </q-list>
           </div>
         </div>
       </div>

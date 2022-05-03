@@ -6,22 +6,35 @@
     <page-body
       ><div class="q-pt-sm q-pb-md q-pl-sm q-pr-sm row">
         <q-card
-          class="post inset-shadow inset-shadow-down col-11 q-ma-sm"
+          class="post inset-shadow inset-shadow-down col-11 q-ma-xs"
           v-for="feeds in store.state.feeds"
           :key="feeds.id"
         >
-          <q-card-section horizontal>
-            <q-card-section class="q-pt-xs">
-              <div class="text-overline">Plum</div>
-              <div class="text-h6 q-mt-sm q-mb-xs">Ruiru</div>
-              <div class="text-caption text-grey">
-                Building Plum with vue 3. This app is getting complex and I
-                thought I could redesign and rebuild it better with Vue 3
-                Finally found a way for nesting child pages in routes. Please
-                click on the image.
-              </div>
+          <q-card-section vertical>
+            <q-card-section class="q-pt-xs q-pl-none q-pr-none q-pb-none">
+              <q-item class="q-pt-xs q-pl-none q-pr-none q-pb-none">
+                <q-item-section avatar>
+                  <q-avatar>
+                    <img :src="feeds.url" />
+                  </q-avatar>
+                </q-item-section>
+
+                <q-item-section>
+                  <q-item-label class="text-bold">Plum Account</q-item-label>
+                  <q-item-label caption> post location </q-item-label>
+                </q-item-section>
+              </q-item>
+              <div class="text-bold q-mt-sm q-mb-xs">Ruiru</div>
+              <q-item :to="`/feeds/${feeds.id}`" clickable class="q-pa-none">
+                <div class="text-black">
+                  Building Plum with vue 3. This app is getting complex and I
+                  thought I could redesign and rebuild it better with Vue 3
+                  Finally found a way for nesting child pages in routes. Please
+                  click on the image.
+                </div></q-item
+              >
             </q-card-section>
-            <q-card-section class="col-7"
+            <q-card-section class="col-7 q-pt-xs q-pl-none q-pr-none q-pb-none"
               ><router-link :to="`/feeds/${feeds.id}`">
                 <q-img
                   :src="feeds.url"
@@ -63,7 +76,7 @@ export default defineComponent({
     transform: translateX(-51%)
     background-image: linear-gradient(90deg,#CCC5B9 79%,#CCC5B9 15%)
     border-top-left-radius: 20px
-    border-top-right-radius: 10px
-    border-bottom-right-radius: 20px
-    border-bottom-left-radius: 10px
+    border-top-right-radius: 20px
+    border-bottom-right-radius: 40px
+    border-bottom-left-radius: 40px
 </style>

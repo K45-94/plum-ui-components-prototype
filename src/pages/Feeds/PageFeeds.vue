@@ -4,11 +4,13 @@
       <template #title> PLUM </template>
     </page-header>
     <page-body
-      ><div class="q-pt-sm q-pb-md q-pl-sm q-pr-sm row">
+      ><div class="q-pt-sm q-pb-sm q-pl-none q-pr-none row">
         <q-card
-          class="post inset-shadow inset-shadow-down col-11 q-ma-xs"
+          class="post col-11 q-ma-xs"
           v-for="feeds in store.state.feeds"
           :key="feeds.id"
+          flat
+          unelevated
         >
           <q-card-section
             class="q-pt-xs q-pl-none q-pr-none q-pb-none"
@@ -75,10 +77,7 @@ export default defineComponent({
 .post
     position: relative
     left: 49%
-    transform: translateX(-51%)
+    transform: translateX(-50%)
     background-image: linear-gradient(90deg,#CCC5B9 79%,#CCC5B9 15%)
-    border-top-left-radius: 2px
-    border-top-right-radius: 2px
-    border-bottom-right-radius: 2px
-    border-bottom-left-radius: 2px
+    border: none
 </style>

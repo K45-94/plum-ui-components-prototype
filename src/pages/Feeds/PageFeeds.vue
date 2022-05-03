@@ -31,14 +31,13 @@
               </q-item>
               <q-item :to="`/feeds/${feeds.id}`" clickable class="q-pa-none">
                 <div class="text-black">
-                  Building Plum with vue 3. This app is getting complex and I
-                  thought I could redesign and rebuild it better with Vue 3
-                  Finally found a way for nesting child pages in routes. Please
-                  click on the image.
+                  A microblogging platform with very minimal user interactions.
+                  No like buttons, no reposts/retweets. Propaganda or fake news
+                  can be limited because posts are not supposed to go viral.
                 </div></q-item
               >
             </q-card-section>
-            <q-card-section class="col-7 q-pt-xs q-pl-none q-pr-none q-pb-none"
+            <q-card-section class="col-7 q-pt-md q-pl-none q-pr-none q-pb-none"
               ><router-link :to="`/feeds/${feeds.id}`">
                 <q-img
                   :src="feeds.url"

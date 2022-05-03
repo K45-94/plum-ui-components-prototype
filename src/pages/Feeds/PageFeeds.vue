@@ -10,7 +10,10 @@
           v-for="feeds in store.state.feeds"
           :key="feeds.id"
         >
-          <q-card-section vertical>
+          <q-card-section
+            class="q-pt-xs q-pl-none q-pr-none q-pb-none"
+            vertical
+          >
             <q-card-section class="q-pt-xs q-pl-none q-pr-none q-pb-none">
               <q-item class="q-pt-xs q-pl-none q-pr-none q-pb-none">
                 <q-item-section avatar>
@@ -41,16 +44,15 @@
                   :ratio="1"
                 /> </router-link></q-card-section
           ></q-card-section>
-          <q-separator />
-
-          <q-card-actions>
-            <q-btn flat round icon="event" />
-            <q-btn flat> 7:30PM </q-btn>
-            <q-btn flat color="primary"> Reserve </q-btn>
-          </q-card-actions>
-        </q-card>
-      </div></page-body
-    >
+          <q-card-section class="q-pt-xs q-pl-none q-pr-none q-pb-sm">
+            <div class="row justify-between">
+              <q-btn color="primary" icon="far fa-comment" flat round />
+              <q-btn color="primary" icon="fas fa-retweet" flat round />
+              <q-btn color="primary" icon="far fa-heart" flat round />
+            </div>
+          </q-card-section>
+        </q-card></div
+    ></page-body>
   </page>
 </template>
 
@@ -75,8 +77,8 @@ export default defineComponent({
     left: 49%
     transform: translateX(-51%)
     background-image: linear-gradient(90deg,#CCC5B9 79%,#CCC5B9 15%)
-    border-top-left-radius: 20px
-    border-top-right-radius: 20px
-    border-bottom-right-radius: 40px
-    border-bottom-left-radius: 40px
+    border-top-left-radius: 2px
+    border-top-right-radius: 2px
+    border-bottom-right-radius: 2px
+    border-bottom-left-radius: 2px
 </style>

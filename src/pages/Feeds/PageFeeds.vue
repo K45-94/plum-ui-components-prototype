@@ -6,7 +6,7 @@
     <page-body
       ><div class="q-pt-sm q-pb-sm q-pl-none q-pr-none row">
         <q-card
-          class="post col-11 q-ma-xs"
+          class="post col-11 q-ma-xs q-pb-md"
           v-for="feeds in store.state.feeds"
           :key="feeds.id"
           flat
@@ -29,7 +29,6 @@
                   <q-item-label caption> post location </q-item-label>
                 </q-item-section>
               </q-item>
-              <div class="text-bold q-mt-sm q-mb-xs">Ruiru</div>
               <q-item :to="`/feeds/${feeds.id}`" clickable class="q-pa-none">
                 <div class="text-black">
                   Building Plum with vue 3. This app is getting complex and I
@@ -43,16 +42,10 @@
               ><router-link :to="`/feeds/${feeds.id}`">
                 <q-img
                   :src="feeds.url"
-                  :ratio="1"
+                  :ratio="4 / 3"
+                  class="shadow-20"
                 /> </router-link></q-card-section
           ></q-card-section>
-          <q-card-section class="q-pt-xs q-pl-none q-pr-none q-pb-sm">
-            <div class="row justify-between">
-              <q-btn color="primary" icon="far fa-comment" flat round />
-              <q-btn color="primary" icon="fas fa-retweet" flat round />
-              <q-btn color="primary" icon="far fa-heart" flat round />
-            </div>
-          </q-card-section>
         </q-card></div
     ></page-body>
   </page>

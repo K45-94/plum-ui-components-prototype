@@ -10,7 +10,6 @@
           v-for="feeds in store.state.feeds"
           :key="feeds.id"
           flat
-          unelevated
         >
           <q-card-section
             class="q-pt-xs q-pl-none q-pr-none q-pb-none"
@@ -69,7 +68,6 @@ export default defineComponent({
 .post
     position: relative
     left: 49%
-    transform: translateX(-50%)
+    transform: translateX(-49.7%)
     background-image: linear-gradient(90deg,#CCC5B9 79%,#CCC5B9 15%)
-    border: none
 </style>

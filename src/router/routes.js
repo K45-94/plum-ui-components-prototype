@@ -56,6 +56,20 @@ const routes = [
                   },
                 ],
               },
+              {
+                path: "/profile/payments/airtelwallet",
+                component: () =>
+                  import("pages/profile/payments/PageAirtelMoney.vue"),
+                name: "airtelwallet",
+                children: [
+                  {
+                    path: "/profile/payments/airtelwallet/sendairtelmoney",
+                    component: () =>
+                      import("pages/profile/payments/PageSendAirtelMoney.vue"),
+                    name: "sendairtelmoney",
+                  },
+                ],
+              },
             ],
           },
           {

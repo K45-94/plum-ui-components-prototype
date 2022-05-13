@@ -98,6 +98,22 @@ const routes = [
                   },
                 ],
               },
+              {
+                path: "/profile/payments/pesalinkwallet",
+                component: () =>
+                  import("pages/profile/payments/PagePesalinkMoney.vue"),
+                name: "pesalinkwallet",
+                children: [
+                  {
+                    path: "/profile/payments/pesalinkwallet/sendpesalinkmoney",
+                    component: () =>
+                      import(
+                        "pages/profile/payments/PageSendPesalinkMoney.vue"
+                      ),
+                    name: "sendpesalinklmoney",
+                  },
+                ],
+              },
             ],
           },
           {

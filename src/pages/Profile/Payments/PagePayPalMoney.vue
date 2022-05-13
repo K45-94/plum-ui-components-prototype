@@ -16,7 +16,7 @@
                 clickable
               >
                 <q-item-section avatar class="col-4">
-                  <q-avatar color="secondary" text-color="white"> TK </q-avatar>
+                  <q-avatar color="secondary" text-color="white"> PL </q-avatar>
                 </q-item-section>
                 <q-item-section class="col-4">
                   <q-item-label class="text-bold absolute-center"
@@ -38,7 +38,7 @@
               <q-space class="q-pa-sm" />
               <q-item to="/TelkomWallet" clickable>
                 <q-item-section avatar class="col-4">
-                  <q-avatar color="secondary" text-color="white"> LT </q-avatar>
+                  <q-avatar color="secondary" text-color="white"> PL </q-avatar>
                 </q-item-section>
                 <q-item-section class="col-4">
                   <q-item-label class="text-bold absolute-center"

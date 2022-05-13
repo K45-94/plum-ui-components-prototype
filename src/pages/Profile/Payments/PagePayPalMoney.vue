@@ -20,7 +20,7 @@
                 </q-item-section>
                 <q-item-section class="col-4">
                   <q-item-label class="text-bold absolute-center"
-                    >Send From T-kash</q-item-label
+                    >Send From PayPal</q-item-label
                   >
                 </q-item-section>
                 <q-item-section class="col-4">
@@ -34,27 +34,7 @@
                   />
                 </q-item-section>
               </q-item>
-              <q-space class="q-pa-sm" />
-              <q-item to="/withdrawCash" clickable>
-                <q-item-section avatar class="col-4">
-                  <q-avatar color="secondary" text-color="white"> WC </q-avatar>
-                </q-item-section>
-                <q-item-section class="col-4">
-                  <q-item-label class="text-bold absolute-center"
-                    >Withdraw Cash From Telkom</q-item-label
-                  >
-                </q-item-section>
-                <q-item-section class="col-4">
-                  <q-btn
-                    to="/withdrawCash"
-                    class="absolute-right"
-                    icon="eva-arrow-ios-forward-outline"
-                    flat
-                    dense
-                    color="black"
-                  />
-                </q-item-section>
-              </q-item>
+
               <q-space class="q-pa-sm" />
               <q-item to="/TelkomWallet" clickable>
                 <q-item-section avatar class="col-4">
@@ -62,7 +42,7 @@
                 </q-item-section>
                 <q-item-section class="col-4">
                   <q-item-label class="text-bold absolute-center"
-                    >Pay With T-Kash</q-item-label
+                    >Pay with PayPal</q-item-label
                   >
                 </q-item-section>
                 <q-item-section class="col-4">
@@ -83,7 +63,7 @@
                 </q-item-section>
                 <q-item-section class="col-4">
                   <q-item-label class="text-bold absolute-center"
-                    >T-Kash Balance</q-item-label
+                    >PayPal Balance</q-item-label
                   >
                 </q-item-section>
                 <q-item-section class="col-4">

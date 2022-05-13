@@ -75,7 +75,7 @@
               </q-item-section>
             </q-item>
             <q-space class="q-pa-sm" />
-            <q-item to="/PayPalWallet" clickable>
+            <q-item to="/profile/payments/paypalwallet" clickable>
               <q-item-section avatar class="col-4">
                 <q-avatar color="secondary" text-color="white"> PP </q-avatar>
               </q-item-section>
@@ -86,7 +86,7 @@
               </q-item-section>
               <q-item-section class="col-4">
                 <q-btn
-                  to="/PayPalWallet"
+                  to="/profile/payments/paypalwallet"
                   class="absolute-right"
                   icon="eva-arrow-ios-forward-outline"
                   flat

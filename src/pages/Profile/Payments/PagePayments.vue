@@ -33,7 +33,7 @@
               </q-item-section>
             </q-item>
             <q-space class="q-pa-sm" />
-            <q-item to="/AirtelWallet" clickable>
+            <q-item to="/profile/payments/airtelwallet" clickable>
               <q-item-section avatar class="col-4">
                 <q-avatar color="secondary" text-color="white"> A </q-avatar>
               </q-item-section>

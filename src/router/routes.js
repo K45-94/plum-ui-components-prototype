@@ -70,6 +70,20 @@ const routes = [
                   },
                 ],
               },
+              {
+                path: "/profile/payments/telkomwallet",
+                component: () =>
+                  import("pages/profile/payments/PageTelkomMoney.vue"),
+                name: "telkomwallet",
+                children: [
+                  {
+                    path: "/profile/payments/telkomwallet/sendtelkommoney",
+                    component: () =>
+                      import("pages/profile/payments/PageSendTelkomMoney.vue"),
+                    name: "sendtelkommoney",
+                  },
+                ],
+              },
             ],
           },
           {

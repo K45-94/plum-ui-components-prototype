@@ -32,27 +32,6 @@
                 </q-item-section>
               </q-item>
               <q-space class="q-pa-sm" />
-              <q-item to="/withdrawCash" clickable>
-                <q-item-section avatar class="col-4">
-                  <q-avatar color="secondary" text-color="white"> WC </q-avatar>
-                </q-item-section>
-                <q-item-section class="col-4">
-                  <q-item-label class="text-bold absolute-center"
-                    >Withdraw From Mpesa</q-item-label
-                  >
-                </q-item-section>
-                <q-item-section class="col-4">
-                  <q-btn
-                    to="/withdrawCash"
-                    class="absolute-right"
-                    icon="eva-arrow-ios-forward-outline"
-                    flat
-                    dense
-                    color="black"
-                  />
-                </q-item-section>
-              </q-item>
-              <q-space class="q-pa-sm" />
               <q-item to="/TelkomWallet" clickable>
                 <q-item-section avatar class="col-4">
                   <q-avatar color="secondary" text-color="white"> LM </q-avatar>
@@ -65,6 +44,27 @@
                 <q-item-section class="col-4">
                   <q-btn
                     to="/TelkomWallet"
+                    class="absolute-right"
+                    icon="eva-arrow-ios-forward-outline"
+                    flat
+                    dense
+                    color="black"
+                  />
+                </q-item-section>
+              </q-item>
+              <q-space class="q-pa-sm" />
+              <q-item to="/withdrawCash" clickable>
+                <q-item-section avatar class="col-4">
+                  <q-avatar color="secondary" text-color="white"> WC </q-avatar>
+                </q-item-section>
+                <q-item-section class="col-4">
+                  <q-item-label class="text-bold absolute-center"
+                    >Withdraw From Mpesa</q-item-label
+                  >
+                </q-item-section>
+                <q-item-section class="col-4">
+                  <q-btn
+                    to="/withdrawCash"
                     class="absolute-right"
                     icon="eva-arrow-ios-forward-outline"
                     flat

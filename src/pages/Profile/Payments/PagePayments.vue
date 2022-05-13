@@ -99,7 +99,7 @@
             </q-item>
 
             <q-space class="q-pa-sm" />
-            <q-item to="/Pesalink" clickable>
+            <q-item to="/profile/payments/pesalinkwallet" clickable>
               <q-item-section avatar class="col-4">
                 <q-avatar color="secondary" text-color="white"> P </q-avatar>
               </q-item-section>
@@ -110,7 +110,7 @@
               </q-item-section>
               <q-item-section class="col-4">
                 <q-btn
-                  to="/Pesalink"
+                  to="/profile/payments/pesalinkwallet"
                   class="absolute-right"
                   icon="eva-arrow-ios-forward-outline"
                   flat

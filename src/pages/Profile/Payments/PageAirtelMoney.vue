@@ -67,7 +67,7 @@
                 </q-item-section>
                 <q-item-section class="col-4">
                   <q-btn
-                    to="/TelkomWallet"
+                    to="/airtelwallet"
                     class="absolute-right"
                     icon="eva-arrow-ios-forward-outline"
                     flat

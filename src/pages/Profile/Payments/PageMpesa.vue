@@ -17,7 +17,7 @@
                 </q-item-section>
                 <q-item-section class="col-4">
                   <q-item-label class="text-bold absolute-center"
-                    >Send Money</q-item-label
+                    >Send From Mpesa</q-item-label
                   >
                 </q-item-section>
                 <q-item-section class="col-4">
@@ -38,7 +38,7 @@
                 </q-item-section>
                 <q-item-section class="col-4">
                   <q-item-label class="text-bold absolute-center"
-                    >Withdraw Cash</q-item-label
+                    >Withdraw From Mpesa</q-item-label
                   >
                 </q-item-section>
                 <q-item-section class="col-4">

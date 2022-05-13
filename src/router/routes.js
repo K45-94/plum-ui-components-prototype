@@ -84,6 +84,20 @@ const routes = [
                   },
                 ],
               },
+              {
+                path: "/profile/payments/paypalwallet",
+                component: () =>
+                  import("pages/profile/payments/PagePayPalMoney.vue"),
+                name: "paypalwallet",
+                children: [
+                  {
+                    path: "/profile/payments/paypalwallet/sendpaypalmoney",
+                    component: () =>
+                      import("pages/profile/payments/PageSendPayPalMoney.vue"),
+                    name: "sendpaypalmoney",
+                  },
+                ],
+              },
             ],
           },
           {

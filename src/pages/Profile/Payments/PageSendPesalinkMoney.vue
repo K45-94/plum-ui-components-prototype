@@ -2,7 +2,7 @@
   <page>
     <page-header>
       <template #button-left>
-        <page-header-button-back-left label="payments" />
+        <page-header-button-back-left label="pesalink" />
       </template>
       <template #title> SEND VIA PESALINK </template>
     </page-header>

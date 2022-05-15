@@ -2,9 +2,9 @@
   <page>
     <page-header>
       <template #button-left>
-        <page-header-button-back-left label="payments" />
+        <page-header-button-back-left label="airtel" />
       </template>
-      <template #title> SEND AIRTEL MONEY </template>
+      <template #title> AIRTEL MONEY </template>
     </page-header>
     <page-body>
       <div class="constrain q-pt-lg q-pb-md q-pl-lg q-pr-lg">

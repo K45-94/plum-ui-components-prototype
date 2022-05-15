@@ -4,7 +4,7 @@
       <template #button-left>
         <page-header-button-back-left label="payments" />
       </template>
-      <template #title> TELKOM MONEY </template>
+      <template #title> T-KASH </template>
     </page-header>
     <page-body>
       <div class="constrain q-pt-lg q-pb-md q-pl-lg q-pr-lg">

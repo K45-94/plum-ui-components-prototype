@@ -112,7 +112,7 @@ export default {
     background: linear-gradient(145deg,#4A180E 15%,#4A180E 85%)
 .q-toolbar
   @media (min-width: $breakpoint-sm-min)
-    height: 77px
+    height: 58px
 .q-toolbar_title
   font-size: 30px
   @media (max-width: $breakpoint-xs-max)

@@ -185,6 +185,28 @@ const state = reactive({
       online: true,
     },
   ],
+  messages: [
+    {
+      text: "social apps should not be addictive",
+      from: "me",
+    },
+    {
+      text: "the HickHyman law",
+      from: "them",
+    },
+    {
+      text: "less features results in faster decision making. also, trim the decision making process",
+      from: "them",
+    },
+    {
+      text: "and we need mpesa integration on this chat section. would be great to mpesa on a chat app",
+      from: "me",
+    },
+    {
+      text: "doing all my transactions in plum",
+      from: "them",
+    },
+  ],
   usePageTransition: true,
 });
 

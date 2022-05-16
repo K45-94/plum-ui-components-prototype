@@ -7,11 +7,11 @@
       <template #title> CHAT-ID </template>
     </page-header>
     <page-body>
-      <div class="q-pt-lg q-pb-md q-pl-lg q-pr-lg">
+      <div class="q-pt-lg q-pb-md">
         <div class="page-chat flex column constrain-more">
-          <div class="q-pa-md column col justify-end">
+          <div class="q-pa-sm column col justify-end">
             <q-chat-message
-              class="q-pb-sm q-mb-sm"
+              class="q-pb-sm q-mb-sm q-pl-sm q-pr-sm"
               v-for="(message, key) in messages"
               :key="key"
               :text="[message.text]"

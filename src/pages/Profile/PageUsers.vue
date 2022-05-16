@@ -7,7 +7,7 @@
       <template #title> CHATS </template>
     </page-header>
     <page-body>
-      <div class="constrain q-pt-lg q-pb-md q-pl-lg q-pr-lg">
+      <div class="constrain q-pt-lg q-pb-md q-pl-sm q-pr-sm">
         <q-list class="full-width">
           <q-item
             v-for="user in store.state.users"

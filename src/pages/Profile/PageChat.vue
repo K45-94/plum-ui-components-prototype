@@ -12,7 +12,7 @@
           <div class="q-pa-sm column col justify-end">
             <q-chat-message
               class="q-pb-sm q-mb-sm q-pl-sm q-pr-sm"
-              v-for="(message, key) in messages"
+              v-for="(message, key) in store.state.messages"
               :key="key"
               :text="[message.text]"
               :sent="message.from == 'me' ? true : false"
@@ -146,6 +146,7 @@
 import Page from "src/components/PagePlumComponent/Page.vue";
 import PageHeader from "src/components/PagePlumComponent/PageHeader.vue";
 import PageHeaderButtonBackLeft from "src/components/PagePlumComponent/PageHeaderButtonBackLeft.vue";
+import store from "src/plumStore";
 import { defineComponent } from "vue";
 
 export default defineComponent({
@@ -155,28 +156,7 @@ export default defineComponent({
     return {
       card: false,
       newMessage: "",
-      messages: [
-        {
-          text: "social apps should not be addictive",
-          from: "me",
-        },
-        {
-          text: "the HickHyman law",
-          from: "them",
-        },
-        {
-          text: "less features results in faster decision making. also, trim the decision making process",
-          from: "them",
-        },
-        {
-          text: "and we need mpesa integration on this chat section. would be great to mpesa on a chat app",
-          from: "me",
-        },
-        {
-          text: "doing all my transactions in plum",
-          from: "them",
-        },
-      ],
+      store,
     };
   },
   methods: {

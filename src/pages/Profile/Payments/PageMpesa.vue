@@ -59,7 +59,7 @@
                 </q-item-section>
                 <q-item-section class="col-4">
                   <q-item-label class="text-bold absolute-center"
-                    >Withdraw From Mpesa</q-item-label
+                    >Get Cash From Mpesa</q-item-label
                   >
                 </q-item-section>
                 <q-item-section class="col-4">

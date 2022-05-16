@@ -36,15 +36,15 @@
               </q-item>
               <q-space class="q-pa-sm" />
               <q-item to="/withdrawCash" clickable>
-                <q-item-section avatar class="col-4">
+                <q-item-section avatar class="col-2">
                   <q-avatar color="secondary" text-color="white"> WC </q-avatar>
                 </q-item-section>
-                <q-item-section class="col-4">
+                <q-item-section class="col-8">
                   <q-item-label class="text-bold absolute-center"
-                    >Withdraw Cash From Telkom</q-item-label
+                    >Get Cash From T-kash</q-item-label
                   >
                 </q-item-section>
-                <q-item-section class="col-4">
+                <q-item-section class="col-2">
                   <q-btn
                     to="/withdrawCash"
                     class="absolute-right"

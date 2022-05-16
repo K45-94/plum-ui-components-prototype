@@ -161,7 +161,7 @@ export default defineComponent({
   },
   methods: {
     sendMessage() {
-      this.messages.push({
+      this.store.state.messages.push({
         text: this.newMessage,
         from: "me",
       });

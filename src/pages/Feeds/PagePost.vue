@@ -20,7 +20,7 @@
               no-transition
               class="no-pointer-events"
             />
-            <div class="q-pa-md">
+            <div class="q-pt-md q-pb-md q-pl-none q-pr-none">
               <div class="text-h5 q-mb-md">{{ feed.caption }}</div>
               <p v-for="i in 5" :key="i">
                 Building Plum with vue 3. This app is getting complex and I

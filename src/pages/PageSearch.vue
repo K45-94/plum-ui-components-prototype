@@ -2,7 +2,7 @@
   <page>
     <page-header> <template #title> SEARCH </template></page-header>
     <page-body>
-      <div class="q-pt-lg q-pb-md q-pl-lg q-pr-lg">
+      <div class="q-pt-lg q-pb-md q-pl-md q-pr-md">
         <p v-for="i in 30" :key="i">
           Building Plum with vue 3. This app is getting complex and I thought I
           could redesign and rebuild it better with Vue 3 Finally found a way

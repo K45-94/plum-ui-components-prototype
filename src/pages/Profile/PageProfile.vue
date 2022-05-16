@@ -4,7 +4,7 @@
       <template #title> PROFILE </template>
     </page-header>
     <page-body>
-      <div class="q-pt-lg q-pb-md q-pl-lg q-pr-lg">
+      <div class="q-pt-lg q-pb-md q-pl-md q-pr-md">
         <div class="row q-col-gutter-lg">
           <div class="col-12 col-sm-8">
             <q-card flat>

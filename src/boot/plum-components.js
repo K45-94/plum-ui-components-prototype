@@ -11,11 +11,10 @@ const plumComponents = {
   pageBody: require("components/PagePlumComponent/PageBody").default,
   pageSettingsButton: require("components/PagePlumComponent/PageSettingsButton")
     .default,
-  pageButtonBackError:
-    require("components/PagePlumComponent/PageButtonBackError").default,
-  plumMpesaSendMoneyFormComponent:
-    require("components/PagePlumComponent/PlumMpesaSendMoneyFormComponent")
-      .default,
+  pageButtonBack: require("components/PagePlumComponent/PageButtonBack")
+    .default,
+  plumSendMoneyFormComponent:
+    require("components/PagePlumComponent/PlumSendMoneyFormComponent").default,
 };
 
 export default boot(async ({ app }) => {

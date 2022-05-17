@@ -28,11 +28,11 @@
 
               <q-tab-panels v-model="tab" animated>
                 <q-tab-panel name="sendmoney">
-                  <plum-mpesa-send-money-form-component></plum-mpesa-send-money-form-component>
+                  <plum-send-money-form-component></plum-send-money-form-component>
                 </q-tab-panel>
 
                 <q-tab-panel name="othernetwork">
-                  <plum-mpesa-send-money-form-component></plum-mpesa-send-money-form-component>
+                  <plum-send-money-form-component></plum-send-money-form-component>
                 </q-tab-panel>
               </q-tab-panels>
             </q-card>
@@ -47,7 +47,7 @@
 import Page from "src/components/PagePlumComponent/Page.vue";
 import PageHeader from "src/components/PagePlumComponent/PageHeader.vue";
 import PageHeaderButtonBackLeft from "src/components/PagePlumComponent/PageHeaderButtonBackLeft.vue";
-import PlumMpesaSendMoneyFormComponent from "src/components/PagePlumComponent/PlumMpesaSendMoneyFormComponent.vue";
+import PlumSendMoneyFormComponent from "src/components/PagePlumComponent/PlumSendMoneyFormComponent.vue";
 import { defineComponent, ref } from "vue";
 
 export default defineComponent({
@@ -55,7 +55,7 @@ export default defineComponent({
     Page,
     PageHeader,
     PageHeaderButtonBackLeft,
-    PlumMpesaSendMoneyFormComponent,
+    PlumSendMoneyFormComponent,
   ],
   name: "sendpesalinklmoney",
   setup() {

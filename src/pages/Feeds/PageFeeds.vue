@@ -18,9 +18,11 @@
             <q-card-section class="q-pt-xs q-pl-none q-pr-none q-pb-none">
               <q-item class="q-pt-xs q-pl-none q-pr-none q-pb-none">
                 <q-item-section avatar>
-                  <q-avatar>
-                    <img :src="feeds.url" />
-                  </q-avatar>
+                  <q-btn round to="/userprofile">
+                    <q-avatar>
+                      <img :src="feeds.url" />
+                    </q-avatar>
+                  </q-btn>
                 </q-item-section>
 
                 <q-item-section>

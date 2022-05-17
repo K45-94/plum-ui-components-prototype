@@ -1,24 +1,24 @@
 <template>
   <div
-    class="fullscreen bg-warning text-black text-center q-pa-md flex flex-center"
+    class="fullscreen bg-green text-black text-center q-pa-md flex flex-center"
   >
     <div>
-      <div style="font-size: 30vh">404</div>
+      <div style="font-size: 15vh">404</div>
 
       <div class="text-h2" style="opacity: 0.4">Oops. No Plums here...</div>
       <div>
-        <page-button-back-error label="Go Back" />
+        <page-button-back label="Go Home" />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import PageButtonBackError from "src/components/PagePlumComponent/PageButtonBackError.vue";
+import PageButtonBack from "src/components/PagePlumComponent/PageButtonBack.vue";
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  components: [PageButtonBackError],
+  components: [PageButtonBack],
   name: "Error404",
 });
 </script>

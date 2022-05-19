@@ -58,6 +58,12 @@ const routes = [
                       import("pages/profile/payments/PageSendMpesa.vue"),
                     name: "sendmpesa",
                   },
+                  {
+                    path: "/profile/payments/mpesawallet/lipanampesa",
+                    component: () =>
+                      import("pages/profile/payments/PageLipaNaMpesa.vue"),
+                    name: "lipanampesa",
+                  },
                 ],
               },
               {

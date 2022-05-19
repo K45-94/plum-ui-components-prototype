@@ -15,6 +15,10 @@ const plumComponents = {
     .default,
   plumSendMoneyFormComponent:
     require("components/PagePlumComponent/PlumSendMoneyFormComponent").default,
+  plumBuygoodsFormComponent:
+    require("components/PagePlumComponent/PlumBuygoodsFormComponent").default,
+  plumPaybillFormComponent:
+    require("components/PagePlumComponent/PlumPaybillFormComponent").default,
 };
 
 export default boot(async ({ app }) => {

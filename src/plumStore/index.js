@@ -34,56 +34,67 @@ const state = reactive({
       id: "id7",
       url: "/images/7.jpg",
       caption: "Thika Road at Night",
+      userProfile: "userProfile7",
     },
     {
       id: "id8",
       url: "/images/8.jpg",
       caption: "Ngong sunset with Pauline",
+      userProfile: "userProfile8",
     },
     {
       id: "id9",
       url: "/images/9.jpg",
       caption: "Tatu City",
+      userProfile: "userProfile9",
     },
     {
       id: "id14",
       url: "/images/14.jpg",
       caption: "Tatu City",
+      userProfile: "userProfile14",
     },
     {
       id: "id18",
       url: "/images/18.jpg",
       caption: "Tatu City",
+      userProfile: "userProfile18",
     },
     {
       id: "id24",
       url: "/images/24.jpg",
       caption: "Tatu City",
+      userProfile: "userProfile24",
     },
     {
       id: "id27",
       url: "/images/27.jpg",
       caption: "Tatu City",
+      userProfile: "userProfile27",
     },
     {
       id: "id28",
       url: "/images/28.jpg",
       caption: "Tatu City",
+      userProfile: "userProfile28",
     },
     {
       id: "id29",
       url: "/images/29.jpg",
       caption: "Tatu City",
+      userProfile: "userProfile29",
     },
     {
       id: "id31",
       url: "/images/31.jpg",
       caption: "Tatu City",
+      userProfile: "userProfile31",
     },
     {
       id: "id32",
       url: "/images/32.jpg",
       caption: "Tatu City",
+      userProfile: "userProfile32",
     },
   ],
 
@@ -207,6 +218,7 @@ const state = reactive({
       from: "them",
     },
   ],
+
   usePageTransition: true,
 });
 

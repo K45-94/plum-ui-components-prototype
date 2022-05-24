@@ -16,7 +16,10 @@
             vertical
           >
             <q-card-section class="q-pt-xs q-pl-none q-pr-none q-pb-none">
-              <q-item class="q-pt-xs q-pl-none q-pr-none q-pb-none">
+              <q-item
+                class="q-pt-xs q-pl-none q-pr-none q-pb-none"
+                to="/userprofile"
+              >
                 <q-item-section avatar>
                   <q-btn round to="/userprofile">
                     <q-avatar>

@@ -7,8 +7,9 @@
       ><div class="q-pt-sm q-pb-sm q-pl-none q-pr-none row">
         <q-card
           class="post col-11 q-ma-xs q-pb-md"
-          v-for="feeds in store.state.feeds"
-          :key="feeds.id"
+          v-for="feeds in (store.state.feeds,
+          userProfile in store.state.userProfile)"
+          :key="[feeds.id][userProfile.name]"
           flat
         >
           <q-card-section
@@ -18,10 +19,10 @@
             <q-card-section class="q-pt-xs q-pl-none q-pr-none q-pb-none">
               <q-item
                 class="q-pt-xs q-pl-none q-pr-none q-pb-none"
-                to="/userprofile"
+                :to="`/${userProfile.name}`"
               >
                 <q-item-section avatar>
-                  <q-btn round to="/userprofile">
+                  <q-btn round :to="`/${userProfile.name}`">
                     <q-avatar>
                       <img :src="feeds.url" />
                     </q-avatar>

@@ -30,7 +30,7 @@ const routes = [
         component: () => import("src/pages/PageLight.vue"),
       },
       {
-        path: "/userprofile",
+        path: "/:name",
         component: () => import("src/pages/PageUserProfile.vue"),
       },
       {

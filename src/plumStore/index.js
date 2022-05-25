@@ -33,56 +33,67 @@ const state = reactive({
     {
       id: "id7",
       url: "/images/7.jpg",
+      name: "username_a",
       caption: "Thika Road at Night",
     },
     {
       id: "id8",
       url: "/images/8.jpg",
+      name: "username_b",
       caption: "Ngong sunset with Pauline",
     },
     {
       id: "id9",
       url: "/images/9.jpg",
+      name: "username_c",
       caption: "Tatu City",
     },
     {
       id: "id14",
       url: "/images/14.jpg",
+      name: "username_d",
       caption: "Tatu City",
     },
     {
       id: "id18",
       url: "/images/18.jpg",
+      name: "username_e",
       caption: "Tatu City",
     },
     {
       id: "id24",
       url: "/images/24.jpg",
+      name: "username_f",
       caption: "Tatu City",
     },
     {
       id: "id27",
       url: "/images/27.jpg",
+      name: "username_g",
       caption: "Tatu City",
     },
     {
       id: "id28",
       url: "/images/28.jpg",
+      name: "username_h",
       caption: "Tatu City",
     },
     {
       id: "id29",
       url: "/images/29.jpg",
+      name: "username_i",
       caption: "Tatu City",
     },
     {
       id: "id31",
       url: "/images/31.jpg",
+      name: "username_j",
       caption: "Tatu City",
     },
     {
       id: "id32",
       url: "/images/32.jpg",
+      name: "username_k",
       caption: "Tatu City",
     },
   ],
@@ -205,57 +216,6 @@ const state = reactive({
     {
       text: "doing all my transactions in plum",
       from: "them",
-    },
-  ],
-
-  userProfile: [
-    {
-      id: "40",
-      name: "pamela",
-    },
-    {
-      id: "41",
-      name: "kelvingithinji",
-    },
-    {
-      id: "42",
-      name: "someonegood",
-    },
-    {
-      id: "43",
-      name: "anonymousperson",
-    },
-    {
-      id: "44",
-      name: "mj",
-    },
-    {
-      id: "45",
-      name: "dh",
-    },
-    {
-      id: "46",
-      name: "subanonymous",
-    },
-    {
-      id: "47",
-      name: "kamau",
-    },
-    {
-      id: "48",
-      name: "irungu",
-    },
-    {
-      id: "49",
-      name: "chege",
-    },
-    {
-      id: "50",
-      name: "mm",
-    },
-    {
-      id: "51",
-      name: "am",
     },
   ],
 

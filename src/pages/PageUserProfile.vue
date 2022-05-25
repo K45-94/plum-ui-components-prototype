@@ -37,9 +37,7 @@
                 </div></q-item
               >
             </q-card-section>
-
-            ></q-card-section
-          >
+          </q-card-section>
         </q-card>
       </div>
       <div class="row">

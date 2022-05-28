@@ -36,7 +36,7 @@
               </q-item>
 
               <q-space class="q-pa-sm" />
-              <q-item to="/TelkomWallet" clickable>
+              <q-item to="" clickable>
                 <q-item-section avatar class="col-4">
                   <q-avatar color="secondary" text-color="white"> PL </q-avatar>
                 </q-item-section>
@@ -47,7 +47,7 @@
                 </q-item-section>
                 <q-item-section class="col-4">
                   <q-btn
-                    to="/TelkomWallet"
+                    to=""
                     class="absolute-right"
                     icon="eva-arrow-ios-forward-outline"
                     flat
@@ -57,7 +57,7 @@
                 </q-item-section>
               </q-item>
               <q-space class="q-pa-sm" />
-              <q-item to="/PayPalWallet" clickable>
+              <q-item to="" clickable>
                 <q-item-section avatar class="col-4">
                   <q-avatar color="secondary" text-color="white"> B </q-avatar>
                 </q-item-section>
@@ -68,7 +68,7 @@
                 </q-item-section>
                 <q-item-section class="col-4">
                   <q-btn
-                    to="/TelkomWallet"
+                    to=""
                     class="absolute-right"
                     icon="eva-arrow-ios-forward-outline"
                     flat

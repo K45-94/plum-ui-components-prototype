@@ -219,7 +219,7 @@ const state = reactive({
     },
   ],
 
-  usePageTransition: true,
+  usePageTransition: false,
 });
 
 const getters = {

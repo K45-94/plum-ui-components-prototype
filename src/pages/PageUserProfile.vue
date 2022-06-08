@@ -2,7 +2,7 @@
   <page>
     <page-header>
       <template #button-left>
-        <page-button-back label="" />
+        <page-button-back label="feeds" />
       </template>
 
       <template #title> USER-ID </template></page-header
@@ -40,13 +40,13 @@
           </q-card-section>
         </q-card>
       </div>
-      <div class="row">
+      <div class="row q-pl-sm q-pr-sm">
         <q-img
           v-for="feeds in store.state.feeds"
           :key="feeds.id"
           :src="feeds.url"
           :ratio="1"
-          class="col-6"
+          class="col-6 shadow-20"
         />
       </div>
     </page-body>

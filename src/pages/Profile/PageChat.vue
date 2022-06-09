@@ -58,63 +58,65 @@
                               );
                             "
                           >
-                            <q-btn
-                              class="q-mt-lg q-ml-lg shadow-10"
-                              rounded
-                              color="secondary"
-                              text-color="black"
-                              label="Document"
-                              no-caps
-                            />
-                            <q-btn
-                              class="q-mt-lg q-ml-lg shadow-10"
-                              rounded
-                              color="secondary"
-                              text-color="black"
-                              label="Camera"
-                              no-caps
-                            />
-                            <q-btn
-                              class="q-mt-lg q-ml-lg shadow-10"
-                              rounded
-                              color="secondary"
-                              text-color="black"
-                              label="Gallery"
-                              no-caps
-                            />
-                            <q-btn
-                              class="q-mt-lg q-ml-lg shadow-10"
-                              rounded
-                              color="secondary"
-                              text-color="black"
-                              label="Audio"
-                              no-caps
-                            />
-                            <q-btn
-                              class="q-mt-lg q-ml-lg shadow-10"
-                              rounded
-                              color="secondary"
-                              text-color="black"
-                              label="Location"
-                              no-caps
-                            />
-                            <q-btn
-                              class="q-mt-lg q-ml-lg shadow-10"
-                              rounded
-                              color="secondary"
-                              text-color="black"
-                              label="Contact"
-                              no-caps
-                            />
-                            <q-btn
-                              class="q-mt-lg q-ml-lg q-mb-lg shadow-10"
-                              to="/profile/payments"
-                              rounded
-                              color="secondary"
-                              text-color="black"
-                              label="Payment"
-                              no-caps
-                            />
+                            <div class="row q-pa-sm">
+                              <q-btn
+                                class="col-3 q-ma-sm shadow-10"
+                                rounded
+                                color="secondary"
+                                text-color="black"
+                                label="Document"
+                                no-caps
+                              />
+                              <q-btn
+                                class="col-3 q-ma-sm shadow-10"
+                                rounded
+                                color="secondary"
+                                text-color="black"
+                                label="Camera"
+                                no-caps
+                              />
+                              <q-btn
+                                class="col-3 q-ma-sm shadow-10"
+                                rounded
+                                color="secondary"
+                                text-color="black"
+                                label="Gallery"
+                                no-caps
+                              />
+                              <q-btn
+                                class="col-3 q-ma-sm shadow-10"
+                                rounded
+                                color="secondary"
+                                text-color="black"
+                                label="Audio"
+                                no-caps
+                              />
+                              <q-btn
+                                class="col-3 q-ma-sm shadow-10"
+                                rounded
+                                color="secondary"
+                                text-color="black"
+                                label="Location"
+                                no-caps
+                              />
+                              <q-btn
+                                class="col-3 q-ma-sm shadow-10"
+                                rounded
+                                color="secondary"
+                                text-color="black"
+                                label="Contact"
+                                no-caps
+                              />
+                              <q-btn
+                                class="col-3 q-ma-sm shadow-10"
+                                to="/profile/payments"
+                                rounded
+                                color="secondary"
+                                text-color="black"
+                                label="Payment"
+                                no-caps
+                              />
+                            </div>
                           </q-card>
                         </q-card>
                       </q-dialog>

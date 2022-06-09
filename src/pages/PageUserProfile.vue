@@ -75,7 +75,6 @@ export default defineComponent({
 </script>
 <style lang="sass">
 .bio
-
     background-image: linear-gradient(90deg,#CCC5B9 79%,#CCC5B9 15%)
     border-radius: 0
 </style>

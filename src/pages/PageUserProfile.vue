@@ -22,7 +22,7 @@
       <q-page-sticky position="top" :offset="[0, 0]">
         <div class="page-body-spacer-header-constrained"></div>
         <div class="q-pt-none q-pb-sm q-pl-none q-pr-none row">
-          <q-card class="bio col-12 q-mt-none q-pb-md" flat>
+          <q-card class="bio q-pl-sm q-pr-sm col-12 q-mt-none q-pb-md" flat>
             <q-card-section class="q-pt-xs q-pl-xs q-pr-xs q-pb-xs" vertical>
               <q-card-section class="q-pt-xs q-pl-none q-pr-none q-pb-none">
                 <q-item class="q-pt-xs q-pl-none q-pr-none q-pb-none" to="">

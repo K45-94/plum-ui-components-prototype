@@ -39,7 +39,7 @@
                 </q-item-section>
                 <q-item-section class="col-4">
                   <q-btn
-                    to="/security"
+                    to=""
                     class="absolute-right"
                     icon="eva-arrow-ios-forward-outline"
                     flat
@@ -79,7 +79,7 @@
                 </q-item-section>
                 <q-item-section class="col-4">
                   <q-btn
-                    to="/help"
+                    to=""
                     class="absolute-right"
                     icon="eva-arrow-ios-forward-outline"
                     flat
@@ -99,7 +99,7 @@
                 </q-item-section>
                 <q-item-section class="col-4">
                   <q-btn
-                    to="/about"
+                    to=""
                     class="absolute-right"
                     icon="eva-arrow-ios-forward-outline"
                     flat

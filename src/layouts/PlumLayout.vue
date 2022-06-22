@@ -2,12 +2,13 @@
   <q-layout view="lHh lpr lFf lHr lpR fFf" class="shadow-2 rounded-borders">
     <q-page-container>
       <q-footer class="small-screen-only" bordered>
-        <q-tabs class="text-white" active-color="secondary">
+        <q-tabs class="row text-white" active-color="secondary">
           <q-route-tab
             v-for="navItem in store.state.navItems"
             :key="navItem.root"
             :to="navItem.to"
             :icon="navItem.icon"
+            class="col-2"
           />
         </q-tabs>
       </q-footer>

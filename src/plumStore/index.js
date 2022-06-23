@@ -31,6 +31,18 @@ const state = reactive({
 
   feeds: [
     {
+      id: "id34",
+      url: "/images/34.jpg",
+      name: "username_l",
+      caption: "royce",
+    },
+    {
+      id: "id32",
+      url: "/images/32.jpg",
+      name: "username_k",
+      caption: "Tatu City",
+    },
+    {
       id: "id7",
       url: "/images/7.jpg",
       name: "username_a",
@@ -88,12 +100,6 @@ const state = reactive({
       id: "id31",
       url: "/images/31.jpg",
       name: "username_j",
-      caption: "Tatu City",
-    },
-    {
-      id: "id32",
-      url: "/images/32.jpg",
-      name: "username_k",
       caption: "Tatu City",
     },
   ],

@@ -79,6 +79,12 @@ const state = reactive({
       caption: "Tatu City",
     },
     {
+      id: "id25",
+      url: "/images/25.jpg",
+      name: "username_m",
+      caption: "Random caption",
+    },
+    {
       id: "id27",
       url: "/images/27.jpg",
       name: "username_g",

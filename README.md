@@ -1,11 +1,11 @@
 # plumV3 (plum)
 
-Here, I will attempt to build as many individual components as I could. It could take a couple of weeks to do so.
-Optimizing mobile/small-screen view before we jump to large-screen view.
-The user can swipe to go back using mouse or touch.
+Plum-UI is a social app template.
+Optimizing mobile/small-screen view.
+With swipe to go back transitions.
 Contact through kelvinhiuhu@live.com
 
-Also, check out the initial Plum from here => https://github.com/K45-94/plum-frontend-backend
+Also, check out the initial Plum from here and use mobile view=> https://k45-94.github.io/plum-template/
 
 ## Install the dependencies
 
@@ -17,6 +17,8 @@ npm install
 
 ```bash
 npx quasar dev
+or
+quasar dev #
 ```
 
 ### Lint the files

@@ -33,7 +33,7 @@
   },
   "git": {
     "scripts": {
-      "pre-push": "surge --project ./ --domain plum-ui.surge.sh/"
+      "pre-push": "surge --project ./ --domain plum-ui.surge.sh"
     }
   },
   "browserslist": [

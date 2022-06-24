@@ -6,7 +6,8 @@ With swipe to go back transitions.
 Contact through kelvinhiuhu@live.com
 
 Also, check out the initial Plum from here and use mobile view=> https://k45-94.github.io/plum-template/
-=>plum-ui.surge.sh
+
+=>https://plum-ui.surge.sh/
 
 ## Install the dependencies
 

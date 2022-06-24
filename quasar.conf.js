@@ -142,7 +142,7 @@ module.exports = configure(function (ctx) {
       manifest: {
         name: `plumV3`,
         short_name: `plumV3`,
-        description: `Building Plum with from vue 3`,
+        description: `Building Plum with vue 3`,
         display: "standalone",
         orientation: "portrait",
         background_color: "#CCC5B9",

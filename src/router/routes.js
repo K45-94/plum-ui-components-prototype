@@ -40,6 +40,12 @@ const routes = [
           {
             path: "/profile/settings",
             component: () => import("src/pages/profile/PageSettings.vue"),
+            children: [
+              {
+                path: "/profile/settings/themes",
+                component: () => import("src/pages/profile/PageThemes.vue"),
+              },
+            ],
           },
           {
             path: "/profile/payments",

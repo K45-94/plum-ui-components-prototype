@@ -51,20 +51,20 @@
             </q-card>
             <q-space class="q-pa-sm" />
             <q-card flat>
-              <q-item>
+              <q-item to="/profile/settings/themes">
                 <q-item-section class="col-4">
                   <q-item-label class="text-bold center-left"
                     >Themes</q-item-label
                   >
                 </q-item-section>
                 <q-item-section class="col-4">
-                  <q-toggle
-                    :label="ThemeToggle"
-                    color="dark"
-                    false-value="Off"
-                    true-value="On"
-                    v-model="ThemeToggle"
-                    class="absolute-right text-caption"
+                  <q-btn
+                    to="/profile/settings/themes"
+                    class="absolute-right"
+                    icon="eva-arrow-ios-forward-outline"
+                    flat
+                    dense
+                    color="black"
                   />
                 </q-item-section>
               </q-item>
@@ -137,7 +137,6 @@ export default defineComponent({
         },
       ],
       NotificationsToggle: "Off",
-      ThemeToggle: "Off",
     };
   },
 });

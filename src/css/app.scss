@@ -38,6 +38,10 @@
 // layout
 .q-footer {
   z-index: 3000;
+  .q-tab_icon {
+    font-size: 24px;
+  }
+  background: linear-gradient(145deg, #4a180e 15%, #4a180e 85%);
 }
 
 // page
@@ -66,6 +70,7 @@
       }
     }
   }
+  background: linear-gradient(90deg, #ccc5b9 79%, #ccc5b9 15%);
 }
 
 // ios notch safe margin & padding
@@ -116,4 +121,25 @@
   -moz-animation-duration: 0.4s;
   -o-animation-duration: 0.4s;
   animation-duration: 0.4s;
+}
+
+.q-header {
+  background: linear-gradient(145deg, #4a180e 15%, #4a180e 85%);
+}
+.q-toolbar {
+  @media (min-width: $breakpoint-sm-min) {
+    height: 58px;
+  }
+}
+
+.q-toolbar_title {
+  font-size: 30px;
+  @media (max-width: $breakpoint-xs-max) {
+    text-align: center;
+  }
+}
+
+.q-card {
+  background-color: fade-out($color: #ccc5b9, $amount: 0);
+  border-radius: 0;
 }

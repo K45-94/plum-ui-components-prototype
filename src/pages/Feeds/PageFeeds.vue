@@ -29,15 +29,15 @@
                 </q-item-section>
 
                 <q-item-section>
-                  <q-item-label class="text-bold">Plum Account</q-item-label>
-                  <q-item-label caption> post location </q-item-label>
+                  <q-item-label class="text-bold">{{
+                    feeds.accountName
+                  }}</q-item-label>
+                  <q-item-label caption> {{ feeds.location }} </q-item-label>
                 </q-item-section>
               </q-item>
               <q-item :to="`/feeds/${feeds.id}`" clickable class="q-pa-none">
                 <div class="text-black">
-                  A microblogging platform with very minimal user interactions.
-                  No like buttons, no reposts/retweets. Propaganda or fake news
-                  can be limited because posts are not supposed to go viral.
+                  {{ feeds.post }}
                 </div></q-item
               >
             </q-card-section>

@@ -29,11 +29,3 @@ export default {
   },
 };
 </script>
-
-<style lang="sass">
-.q-footer
-  .q-tab_icon
-    font-size: 24px
-.q-footer
-    background: linear-gradient(145deg,#4A180E 15%,#4A180E 85%)
-</style>

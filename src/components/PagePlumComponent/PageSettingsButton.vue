@@ -15,5 +15,3 @@ export default {
   name: "PageSettingsButton",
 };
 </script>
-
-<style lang="sass"></style>

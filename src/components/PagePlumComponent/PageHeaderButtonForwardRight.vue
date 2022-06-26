@@ -15,5 +15,3 @@ export default {
   name: "PageHeaderButtonForwardRight",
 };
 </script>
-
-<style lang="sass"></style>

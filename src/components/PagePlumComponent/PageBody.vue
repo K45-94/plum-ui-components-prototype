@@ -11,5 +11,3 @@ export default {
   name: "PageBody",
 };
 </script>
-
-<style lang="sass"></style>

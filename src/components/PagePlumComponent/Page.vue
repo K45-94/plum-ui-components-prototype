@@ -49,8 +49,3 @@ export default {
   },
 };
 </script>
-
-<style lang="sass">
-.page
-  background: linear-gradient(90deg,#CCC5B9 79%,#CCC5B9 15%)
-</style>

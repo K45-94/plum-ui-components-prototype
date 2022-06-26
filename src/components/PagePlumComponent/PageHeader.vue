@@ -107,20 +107,4 @@ export default {
 };
 </script>
 
-<style lang="scss">
-.q-header {
-  background: linear-gradient(145deg, #4a180e 15%, #4a180e 85%);
-}
-.q-toolbar {
-  @media (min-width: $breakpoint-sm-min) {
-    height: 58px;
-  }
-}
-
-q-toolbar_title {
-  font-size: 30px;
-  @media (max-width: $breakpoint-xs-max) {
-    text-align: center;
-  }
-}
-</style>
+<style lang="scss"></style>

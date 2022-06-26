@@ -35,7 +35,11 @@
                   <q-item-label caption> {{ feeds.location }} </q-item-label>
                 </q-item-section>
               </q-item>
-              <q-item :to="`/feeds/${feeds.id}`" clickable class="q-pa-none">
+              <q-item
+                :to="`/feeds/${feeds.id}`"
+                clickable
+                class="q-pt-sm q-pl-none q-pr-none q-pl-none q-pb-none"
+              >
                 <div class="text-black">
                   {{ feeds.post }}
                 </div></q-item

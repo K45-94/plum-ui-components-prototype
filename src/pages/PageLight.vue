@@ -16,15 +16,6 @@ import { defineComponent, ref } from "vue";
 export default defineComponent({
   name: "PageLight",
   components: [PlumTransit],
-  setup() {
-    const leftDrawerOpen = ref(false);
-    return {
-      leftDrawerOpen,
-      toggleLeftDrawer() {
-        leftDrawerOpen.value = !leftDrawerOpen.value;
-      },
-    };
-  },
 });
 </script>
 <style lang="scss">

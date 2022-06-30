@@ -26,10 +26,6 @@ const routes = [
         component: () => import("src/pages/PageCamera.vue"),
       },
       {
-        path: "/light",
-        component: () => import("src/pages/PageLight.vue"),
-      },
-      {
         path: "/:name",
         component: () => import("src/pages/PageUserProfile.vue"),
       },
@@ -148,7 +144,16 @@ const routes = [
       },
     ],
   },
-
+  {
+    path: "/",
+    component: () => import("src/layouts/PlumTransitLayout.vue"),
+    children: [
+      {
+        path: "/light",
+        component: () => import("src/pages/PageLight.vue"),
+      },
+    ],
+  },
   {
     path: "/:catchAll(.*)*",
     component: () => import("pages/Error404.vue"),

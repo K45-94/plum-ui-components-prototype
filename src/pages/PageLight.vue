@@ -1,22 +1,34 @@
 <template>
-  <page>
-    <page-header> <template #title> COMMUTE </template></page-header>
-    <page-body>
+  <q-page>
+    <div>
       <plum-transit
         city="Nairobi"
         apikey="ptqyBW77etZLythXEOSzw46Zm1QofiQN"
       ></plum-transit>
-    </page-body>
-  </page>
+    </div>
+  </q-page>
 </template>
 
 <script>
-import Page from "src/components/PagePlumComponent/Page.vue";
 import PlumTransit from "src/components/PagePlumComponent/PlumTransit.vue";
-import { defineComponent } from "vue";
+import { defineComponent, ref } from "vue";
 
 export default defineComponent({
-  components: { Page, PlumTransit },
   name: "PageLight",
+  components: [PlumTransit],
+  setup() {
+    const leftDrawerOpen = ref(false);
+    return {
+      leftDrawerOpen,
+      toggleLeftDrawer() {
+        leftDrawerOpen.value = !leftDrawerOpen.value;
+      },
+    };
+  },
 });
 </script>
+<style lang="scss">
+.q-page {
+  background: linear-gradient(90deg, #ccc5b9 79%, #ccc5b9 15%);
+}
+</style>

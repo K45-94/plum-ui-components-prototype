@@ -20,8 +20,9 @@ const plumComponents = {
   plumPaybillFormComponent:
     require("components/PagePlumComponent/PlumPaybillFormComponent").default,
   plumTransit: require("components/PagePlumComponent/PlumTransit").default,
+  plumTransitSearch: require("components/PagePlumComponent/plumTransitSearch")
+    .default,
 };
-
 export default boot(async ({ app }) => {
   for (const key in plumComponents) {
     app.component(key, plumComponents[key]);

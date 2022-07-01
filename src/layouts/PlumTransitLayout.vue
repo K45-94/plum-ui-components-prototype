@@ -56,12 +56,6 @@
             </template>
             <template v-slot:hint> Starting point - enter an address </template>
           </q-input>
-          <plum-transit-search
-            :key="originKey"
-            :apikey="apikey"
-            :location="origin"
-            @locationFound="originFound"
-          />
 
           <q-separator class="q-my-lg" inset />
 
@@ -82,12 +76,6 @@
               Final destination - enter an address
             </template>
           </q-input>
-          <plum-transit-search
-            :key="destinationKey"
-            :apikey="apikey"
-            :location="destination"
-            @locationFound="destinationFound"
-          />
           <div class="row justify-center">
             <q-btn
               class="fit q-ma-sm"

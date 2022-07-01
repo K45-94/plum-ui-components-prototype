@@ -41,7 +41,71 @@
       </q-header>
       <q-scroll-area class="fit q-pa-sm">
         <div class="page-body-spacer-header-constrained"></div>
-        <div>plan a trip</div>
+        <q-list>
+          <q-input
+            class="q-ma-sm"
+            color="secondary"
+            bottom-slots
+            @blur="originKey += 1"
+            v-model="origin"
+            placeholder="Origin"
+            clearable
+          >
+            <template v-slot:prepend>
+              <q-icon name="place" />
+            </template>
+            <template v-slot:hint> Starting point - enter an address </template>
+          </q-input>
+          <plum-transit-search
+            :key="originKey"
+            :apikey="apikey"
+            :location="origin"
+            @locationFound="originFound"
+          />
+
+          <q-separator class="q-my-lg" inset />
+
+          <q-input
+            class="q-ma-sm"
+            color="secondary"
+            @blur="destinationKey += 1"
+            bottom-slots
+            v-model="destination"
+            placeholder="Destination"
+            clearable
+          >
+            <template v-slot:prepend>
+              <q-icon name="place" />
+            </template>
+
+            <template v-slot:hint>
+              Final destination - enter an address
+            </template>
+          </q-input>
+          <plum-transit-search
+            :key="destinationKey"
+            :apikey="apikey"
+            :location="destination"
+            @locationFound="destinationFound"
+          />
+          <div class="row justify-center">
+            <q-btn
+              class="fit q-ma-sm"
+              color="primary"
+              label="Create Route"
+              @click="createRoute"
+            />
+          </div>
+          <div class="row justify-center">
+            <q-btn
+              class="fit q-ma-sm"
+              color="primary"
+              label="Reset"
+              @click="reset"
+            />
+          </div>
+          <div class="q-ma-sm text-h5">route info space</div>
+        </q-list>
       </q-scroll-area>
       <q-footer><q-toolbar> </q-toolbar></q-footer>
     </q-drawer>

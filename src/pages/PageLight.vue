@@ -11,7 +11,7 @@
 
 <script>
 import PlumTransit from "src/components/PagePlumComponent/PlumTransit.vue";
-import { defineComponent, ref } from "vue";
+import { defineComponent } from "vue";
 
 export default defineComponent({
   name: "PageLight",

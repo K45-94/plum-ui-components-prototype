@@ -29,13 +29,7 @@
       </q-tabs>
     </q-footer>
 
-    <q-drawer
-      v-model="leftDrawerOpen"
-      side="left"
-      overlay
-      persistent
-      class="bg-accent"
-    >
+    <q-drawer v-model="leftDrawerOpen" side="left" overlay persistent>
       <q-header>
         <q-toolbar>
           <q-toolbar-title
@@ -46,7 +40,8 @@
         </q-toolbar>
       </q-header>
       <q-scroll-area class="fit q-pa-sm">
-        <!-- Content here -->
+        <div class="page-body-spacer-header-constrained"></div>
+        <div>plan a trip</div>
       </q-scroll-area>
       <q-footer><q-toolbar> </q-toolbar></q-footer>
     </q-drawer>
@@ -86,5 +81,8 @@ export default {
 .q-footer {
   background: linear-gradient(145deg, #4a180e 15%, #4a180e 85%);
   height: 50px;
+}
+.q-drawer {
+  background: linear-gradient(90deg, #ccc5b9 79%, #ccc5b9 15%);
 }
 </style>

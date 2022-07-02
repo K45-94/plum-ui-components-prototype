@@ -119,6 +119,7 @@
           </div>
         </div>
       </div>
+      <div class="page-body-spacer-footer"></div>
     </page-body>
   </page>
 </template>
@@ -152,4 +153,7 @@ export default defineComponent({
 });
 </script>
 
-<style lang="sass"></style>
+<style lang="sass">
+.q-card
+  background: linear-gradient(90deg,#CCC5B9 79%,#CCC5B9 15%)
+</style>

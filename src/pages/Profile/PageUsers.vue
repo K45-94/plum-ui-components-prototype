@@ -39,6 +39,7 @@
           </q-page-sticky>
         </q-list>
       </div>
+      <div class="page-body-spacer-footer"></div>
     </page-body>
   </page>
 </template>

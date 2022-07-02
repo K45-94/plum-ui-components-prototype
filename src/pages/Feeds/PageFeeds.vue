@@ -53,8 +53,10 @@
                   class="shadow-20"
                 /> </router-link></q-card-section
           ></q-card-section>
-        </q-card></div
-    ></page-body>
+        </q-card>
+      </div>
+      <div class="page-body-spacer-footer"></div>
+    </page-body>
   </page>
 </template>
 
@@ -73,10 +75,15 @@ export default defineComponent({
   },
 });
 </script>
-<style lang="sass">
-.post
-    position: relative
-    left: 49%
-    transform: translateX(-49.7%)
-    border-radius: 0
+<style lang="scss">
+.post {
+  position: relative;
+  left: 49%;
+  transform: translateX(-49.7%);
+  border-radius: 0;
+}
+.q-card {
+  background-color: fade-out($color: #ccc5b9, $amount: 0);
+  border-radius: 0;
+}
 </style>

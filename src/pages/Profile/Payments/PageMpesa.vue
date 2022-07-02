@@ -98,6 +98,7 @@
           </div>
         </div>
       </div>
+      <div class="page-body-spacer-footer"></div>
     </page-body>
   </page>
 </template>

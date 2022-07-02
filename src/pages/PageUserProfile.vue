@@ -18,6 +18,7 @@
           class="col-6 shadow-20"
         />
       </div>
+      <div class="page-body-spacer-footer"></div>
 
       <q-page-sticky position="top" :offset="[0, 0]">
         <div class="page-body-spacer-header-constrained"></div>
@@ -73,3 +74,10 @@ export default defineComponent({
   },
 });
 </script>
+
+<style lang="scss">
+.q-card {
+  background-color: fade-out($color: #ccc5b9, $amount: 0);
+  border-radius: 0;
+}
+</style>

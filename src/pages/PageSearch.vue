@@ -9,6 +9,8 @@
           for nesting child pages in routes.
         </p>
       </div>
+
+      <div class="page-body-spacer-footer"></div>
     </page-body>
   </page>
 </template>

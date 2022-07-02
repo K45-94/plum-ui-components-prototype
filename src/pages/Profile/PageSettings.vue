@@ -112,6 +112,7 @@
           </div>
         </div>
       </div>
+      <div class="page-body-spacer-footer"></div>
     </page-body>
   </page>
 </template>
@@ -141,3 +142,10 @@ export default defineComponent({
   },
 });
 </script>
+
+<style lang="scss">
+.q-card {
+  background-color: fade-out($color: #ccc5b9, $amount: 0);
+  border-radius: 0;
+}
+</style>

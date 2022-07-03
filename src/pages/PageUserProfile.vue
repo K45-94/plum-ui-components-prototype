@@ -78,6 +78,7 @@ export default defineComponent({
 <style lang="scss">
 .q-card {
   background-color: fade-out($color: #ccc5b9, $amount: 0);
-  border-radius: 0;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 </style>

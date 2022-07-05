@@ -23,7 +23,7 @@
         </div>
       </div>
       <div class="page-body-spacer-footer"></div>
-      <q-page-sticky position="bottom">
+      <q-page-sticky position="bottom" class="chat">
         <q-card class="chat-type q-pr-none q-pl-none q-ma-none constrain-more">
           <q-toolbar>
             <q-form @submit="sendMessage" class="full-width">
@@ -180,7 +180,12 @@ export default defineComponent({
 .chat-type {
   background: linear-gradient(145deg, #4a180e 15%, #4a180e 85%);
   height: 50px;
+  width: 100%;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
+}
+.chat {
+  background: linear-gradient(145deg, #4a180e 15%, #4a180e 85%);
+  width: 100%;
 }
 </style>

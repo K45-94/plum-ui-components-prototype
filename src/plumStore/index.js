@@ -33,7 +33,7 @@ const state = reactive({
     {
       id: "id40",
       url: "/images/40.jpg",
-      name: "username_l",
+      name: "username_m",
       caption: "cmhr",
       post: "This is the top post on plum. First, you may be wondering why plum.",
       location: "Winnipeg",
@@ -42,7 +42,7 @@ const state = reactive({
     {
       id: "id32",
       url: "/images/32.jpg",
-      name: "username_k",
+      name: "username_l",
       caption: "Tatu City",
       post: "This is the second post on plum. Normal social spaces are polluted with different types of chaos. From propaganda, fake news, bullying, agendas targeting persons and others.",
       location: "Kitui",
@@ -105,7 +105,7 @@ const state = reactive({
     {
       id: "id25",
       url: "/images/25.jpg",
-      name: "username_m",
+      name: "username_p",
       caption: "Random caption",
       post: "This is the ninth post on plum.",
       location: "Ainabkoi",
@@ -150,7 +150,7 @@ const state = reactive({
     {
       id: "id41",
       url: "/images/41.jpg",
-      name: "username_j",
+      name: "username_k",
       caption: "Downtown Winnipeg",
       post: "This is the thirteenth post on plum.",
       location: "Winnipeg",

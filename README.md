@@ -5,7 +5,11 @@ Optimizing mobile/small-screen view.
 With swipe to go back transitions.
 Contact through kelvinhiuhu@live.com
 
+<<<<<<< HEAD
 Also, check out the initial Plum from here and use mobile =>https://plum-ui.surge.sh/
+=======
+Also, check out the initial Plum from here and use mobile view =>https://plum-ui.surge.sh/
+>>>>>>> master
 
 ## Install the dependencies
 

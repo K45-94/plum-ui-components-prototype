@@ -31,12 +31,12 @@ const state = reactive({
 
   feeds: [
     {
-      id: "id34",
-      url: "/images/34.jpg",
+      id: "id40",
+      url: "/images/40.jpg",
       name: "username_l",
-      caption: "royce",
+      caption: "cmhr",
       post: "This is the top post on plum. First, you may be wondering why plum.",
-      location: "Maasai mara",
+      location: "Winnipeg",
       accountName: "Freedom Architects",
     },
     {
@@ -146,6 +146,15 @@ const state = reactive({
       post: "This is the thirteenth post on plum.",
       location: "Njoro",
       accountName: "Brookside",
+    },
+    {
+      id: "id41",
+      url: "/images/41.jpg",
+      name: "username_j",
+      caption: "Downtown Winnipeg",
+      post: "This is the thirteenth post on plum.",
+      location: "Winnipeg",
+      accountName: "MTS",
     },
   ],
 

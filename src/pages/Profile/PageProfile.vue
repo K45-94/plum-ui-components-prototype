@@ -19,16 +19,6 @@
                   <q-item-label class="text-bold">Plum Account</q-item-label>
                   <q-item-label caption>@plumaccount</q-item-label>
                 </q-item-section>
-                <q-item-section class="col-4">
-                  <q-btn
-                    to="/profile/settings"
-                    class="absolute-right"
-                    icon="eva-settings-2"
-                    flat
-                    dense
-                    color="primary"
-                  />
-                </q-item-section>
               </q-item>
               <q-separator />
               <div
@@ -107,6 +97,31 @@
                 <q-item-section class="col-4">
                   <q-btn
                     to="/profile/payments"
+                    class="absolute-right"
+                    icon="eva-arrow-ios-forward-outline"
+                    flat
+                    dense
+                    color="black"
+                  />
+                </q-item-section>
+              </q-item>
+              <q-space class="q-pa-sm" />
+              <q-item to="/profile/settings" clickable>
+                <q-item-section avatar class="col-4">
+                  <q-avatar
+                    color="primary"
+                    text-color="white"
+                    icon="eva-settings-2"
+                  ></q-avatar>
+                </q-item-section>
+                <q-item-section class="col-4">
+                  <q-item-label class="text-bold absolute-center"
+                    >Settings</q-item-label
+                  >
+                </q-item-section>
+                <q-item-section class="col-4">
+                  <q-btn
+                    to="/profile/settings"
                     class="absolute-right"
                     icon="eva-arrow-ios-forward-outline"
                     flat

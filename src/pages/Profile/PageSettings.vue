@@ -12,12 +12,12 @@
           <div class="col-12 col-sm-8">
             <q-card flat>
               <q-item>
-                <q-item-section class="col-4">
+                <q-item-section class="col-6">
                   <q-item-label class="text-bold center-left"
                     >Notifications</q-item-label
                   >
                 </q-item-section>
-                <q-item-section class="col-4">
+                <q-item-section class="col-6">
                   <q-toggle
                     :label="NotificationsToggle"
                     color="secondary"
@@ -32,12 +32,12 @@
             <q-space class="q-pa-sm" />
             <q-card flat>
               <q-item>
-                <q-item-section class="col-4">
+                <q-item-section class="col-6">
                   <q-item-label class="text-bold center-left"
                     >Security</q-item-label
                   >
                 </q-item-section>
-                <q-item-section class="col-4">
+                <q-item-section class="col-6">
                   <q-btn
                     to=""
                     class="absolute-right"
@@ -52,12 +52,12 @@
             <q-space class="q-pa-sm" />
             <q-card flat>
               <q-item to="/profile/settings/themes">
-                <q-item-section class="col-4">
+                <q-item-section class="col-6">
                   <q-item-label class="text-bold center-left"
                     >Themes</q-item-label
                   >
                 </q-item-section>
-                <q-item-section class="col-4">
+                <q-item-section class="col-6">
                   <q-btn
                     to="/profile/settings/themes"
                     class="absolute-right"
@@ -72,12 +72,12 @@
             <q-space class="q-pa-sm" />
             <q-card flat>
               <q-item>
-                <q-item-section class="col-4">
+                <q-item-section class="col-6">
                   <q-item-label class="text-bold center-left"
                     >Help n Support</q-item-label
                   >
                 </q-item-section>
-                <q-item-section class="col-4">
+                <q-item-section class="col-6">
                   <q-btn
                     to=""
                     class="absolute-right"
@@ -92,12 +92,12 @@
             <q-space class="q-pa-sm" />
             <q-card flat>
               <q-item>
-                <q-item-section class="col-4">
+                <q-item-section class="col-6">
                   <q-item-label class="text-bold center-left"
                     >About Plum</q-item-label
                   >
                 </q-item-section>
-                <q-item-section class="col-4">
+                <q-item-section class="col-6">
                   <q-btn
                     to=""
                     class="absolute-right"

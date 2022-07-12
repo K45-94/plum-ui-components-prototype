@@ -19,11 +19,10 @@
             :text-color="message.from == 'me' ? 'white' : 'black'"
           />
         </div>
-        <div class="page-body-spacer-footer"></div>
+        <div class="page-body-spacer-lift"></div>
         <q-page-sticky position="bottom" class="">
           <q-list
-            class="chat-type q-pr-none q-pl-none q-ma-none constrain-more"
-            full-width
+            class="chat-type fixed-full q-pr-none q-pl-none q-ma-none constrain-more"
           >
             <q-toolbar>
               <q-form @submit="sendMessage" class="full-width">
@@ -142,6 +141,7 @@
               </q-form>
             </q-toolbar>
           </q-list>
+          <div class="page-body-spacer-chat"></div>
         </q-page-sticky>
       </div>
     </page-body>
@@ -184,5 +184,6 @@ export default defineComponent({
   width: 100%;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
+  border-bottom-color: #4a180e;
 }
 </style>

@@ -1,3 +1,5 @@
+@import "./text-sizes";
+
 .small-screen-only {
   @media (max-width: $breakpoint-xs-max) {
     display: block;

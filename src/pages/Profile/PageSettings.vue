@@ -54,7 +54,7 @@
               <q-item to="/profile/settings/themes">
                 <q-item-section class="col-6">
                   <q-item-label class="text-bold center-left"
-                    >Themes</q-item-label
+                    >Display</q-item-label
                   >
                 </q-item-section>
                 <q-item-section class="col-6">

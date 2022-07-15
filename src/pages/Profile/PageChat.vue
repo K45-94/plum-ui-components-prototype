@@ -49,78 +49,68 @@
                     >
                       <q-dialog v-model="card">
                         <q-card
-                          class="center"
+                          class="center pop-up"
                           style="width: 600px; max-width: 90vw"
                         >
-                          <q-card
-                            style="
-                              background: linear-gradient(
-                                90deg,
-                                #8bace7 20%,
-                                #8bace7 80%
-                              );
-                            "
-                          >
-                            <div class="row q-pa-sm">
-                              <q-btn
-                                class="col-3 q-ma-sm shadow-10"
-                                rounded
-                                color="secondary"
-                                text-color="black"
-                                label="Document"
-                                no-caps
-                              />
-                              <q-btn
-                                class="col-3 q-ma-sm shadow-10"
-                                rounded
-                                color="secondary"
-                                text-color="black"
-                                label="Camera"
-                                no-caps
-                              />
-                              <q-btn
-                                class="col-3 q-ma-sm shadow-10"
-                                rounded
-                                color="secondary"
-                                text-color="black"
-                                label="Gallery"
-                                no-caps
-                              />
-                              <q-btn
-                                class="col-3 q-ma-sm shadow-10"
-                                rounded
-                                color="secondary"
-                                text-color="black"
-                                label="Audio"
-                                no-caps
-                              />
-                              <q-btn
-                                class="col-3 q-ma-sm shadow-10"
-                                rounded
-                                color="secondary"
-                                text-color="black"
-                                label="Location"
-                                no-caps
-                              />
-                              <q-btn
-                                class="col-3 q-ma-sm shadow-10"
-                                rounded
-                                color="secondary"
-                                text-color="black"
-                                label="Contact"
-                                no-caps
-                              />
-                              <q-btn
-                                class="col-3 q-ma-sm shadow-10"
-                                to="/profile/payments"
-                                rounded
-                                color="secondary"
-                                text-color="black"
-                                label="Payment"
-                                no-caps
-                              />
-                            </div>
-                          </q-card>
+                          <div class="row pop-up q-pa-sm">
+                            <q-btn
+                              class="col-3 q-ma-sm shadow-10"
+                              rounded
+                              color="secondary"
+                              text-color="black"
+                              label="Document"
+                              no-caps
+                            />
+                            <q-btn
+                              class="col-3 q-ma-sm shadow-10"
+                              rounded
+                              color="secondary"
+                              text-color="black"
+                              label="Camera"
+                              no-caps
+                            />
+                            <q-btn
+                              class="col-3 q-ma-sm shadow-10"
+                              rounded
+                              color="secondary"
+                              text-color="black"
+                              label="Gallery"
+                              no-caps
+                            />
+                            <q-btn
+                              class="col-3 q-ma-sm shadow-10"
+                              rounded
+                              color="secondary"
+                              text-color="black"
+                              label="Audio"
+                              no-caps
+                            />
+                            <q-btn
+                              class="col-3 q-ma-sm shadow-10"
+                              rounded
+                              color="secondary"
+                              text-color="black"
+                              label="Location"
+                              no-caps
+                            />
+                            <q-btn
+                              class="col-3 q-ma-sm shadow-10"
+                              rounded
+                              color="secondary"
+                              text-color="black"
+                              label="Contact"
+                              no-caps
+                            />
+                            <q-btn
+                              class="col-3 q-ma-sm shadow-10"
+                              to="/profile/payments"
+                              rounded
+                              color="secondary"
+                              text-color="black"
+                              label="Payment"
+                              no-caps
+                            />
+                          </div>
                         </q-card>
                       </q-dialog>
                     </q-btn>
@@ -185,5 +175,11 @@ export default defineComponent({
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   border-bottom-color: #4a180e;
+}
+.pop-up {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 </style>

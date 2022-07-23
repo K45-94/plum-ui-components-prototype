@@ -49,7 +49,7 @@
               ><router-link :to="`/feeds/${feeds.id}`">
                 <q-img
                   :src="feeds.url"
-                  :ratio="4 / 3"
+                  :ratio="4.5 / 3"
                   class="shadow-20"
                 /> </router-link></q-card-section
           ></q-card-section>

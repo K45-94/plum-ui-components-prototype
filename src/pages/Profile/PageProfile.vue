@@ -19,6 +19,10 @@
                   <q-item-label class="text-bold">Plum Account</q-item-label>
                   <q-item-label caption>@plumaccount</q-item-label>
                 </q-item-section>
+
+                <q-btn icon="person" round flat color="primary">
+                  <AuthAccountMenu />
+                </q-btn>
               </q-item>
               <q-separator />
               <div
@@ -144,12 +148,14 @@ import { defineComponent } from "vue";
 import Page from "src/components/PagePlumComponent/Page.vue";
 import PageHeader from "src/components/PagePlumComponent/PageHeader.vue";
 import PageBody from "src/components/PagePlumComponent/PageBody.vue";
+import AuthAccountMenu from "src/auth/components/AccountMenu/AccountMenu.vue";
 
 export default defineComponent({
   components: {
     Page,
     PageHeader,
     PageBody,
+    AuthAccountMenu,
   },
   name: "PageProfile",
   data() {

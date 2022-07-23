@@ -18,25 +18,18 @@
           <q-space />
           <div class="row q-pt-none">
             <p class="q-mb-none">Color</p>
-            <q-list>
-              <q-btn round color="red-10" size="16px" class="q-ma-md" />
-              <q-btn round color="pink" size="16px" class="col-2 q-ma-md" />
-              <q-btn round color="purple" size="16px" class="col-2 q-ma-md" />
-              <q-btn
-                round
-                color="deep-purple"
-                size="16px"
-                class="col-2 q-ma-md"
-              />
-              <q-btn
-                round
-                color="blue-grey"
-                size="16px"
-                class="col-2 q-ma-md"
-              />
-              <q-btn round color="green" size="16px" class="col-2 q-ma-md" />
-              <q-btn round color="brown-5" size="16px" class="col-2 q-ma-md" />
-              <q-btn round color="grey" size="16px" class="col-2 q-ma-md" />
+
+            <q-list class="relative-position">
+              <div class="center">
+                <q-btn round color="red-10" size="16px" class="q-ma-md" />
+                <q-btn round color="pink" size="16px" class="q-ma-md" />
+                <q-btn round color="purple" size="16px" class="q-ma-md" />
+                <q-btn round color="deep-purple" size="16px" class="q-ma-md" />
+                <q-btn round color="blue-grey" size="16px" class="q-ma-md" />
+                <q-btn round color="green" size="16px" class="q-ma-md" />
+                <q-btn round color="brown-5" size="16px" class="q-ma-md" />
+                <q-btn round color="grey" size="16px" class="q-ma-md" />
+              </div>
             </q-list>
           </div>
 

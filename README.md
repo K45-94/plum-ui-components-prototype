@@ -1,4 +1,4 @@
-# plumV3 (plum)
+# plumV3 Mobile App(plum)
 
 Plum-UI is a social app template.
 Optimizing mobile/small-screen view.

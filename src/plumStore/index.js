@@ -161,7 +161,7 @@ const state = reactive({
   users: [
     {
       id: 1,
-      name: "Kelvin Githinji",
+      name: "Plum User1",
       chat: "doing all my transactions in plum",
       online: true,
     },

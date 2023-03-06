@@ -13,20 +13,21 @@
   },
   "dependencies": {
     "@quasar/extras": "^1.13.5",
+    "@supabase/supabase-js": "^1.28.5",
     "@tomtom-international/web-sdk-maps": "^6.20.0",
     "@tomtom-international/web-sdk-services": "^6.20.0",
+    "@vueauth/supabase": "^1.0.0-alpha.20",
     "axios": "^0.21.4",
     "core-js": "^3.6.5",
     "quasar": "^2.6.6",
     "vue": "^3.0.0",
     "vue-i18n": "^9.0.0",
-    "vue-router": "^4.0.0",
-    "@supabase/supabase-js": "^1.28.5",
-    "@vueauth/supabase": "^1.0.0-alpha.20"
+    "vue-router": "^4.0.0"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.13.14",
     "@quasar/app-webpack": "^3.5.1",
+    "@volar-plugins/vetur": "latest",
     "@vueauth/quasar-app-extension-auth": "^1.0.0-alpha.29",
     "eslint": "^7.14.0",
     "eslint-config-prettier": "^8.1.0",

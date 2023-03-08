@@ -16,7 +16,7 @@
               </q-item-section>
               <q-item-section class="col-4">
                 <q-item-label class="text-bold absolute-center"
-                  >M-coin</q-item-label
+                  >Mpesa</q-item-label
                 >
               </q-item-section>
               <q-item-section class="col-4">
@@ -39,7 +39,7 @@
               </q-item-section>
               <q-item-section class="col-4">
                 <q-item-label class="text-bold absolute-center"
-                  >A-Money</q-item-label
+                  >Airtel Money</q-item-label
                 >
               </q-item-section>
               <q-item-section class="col-4">
@@ -105,7 +105,7 @@
               </q-item-section>
               <q-item-section class="col-4">
                 <q-item-label class="text-bold absolute-center"
-                  >P-coin</q-item-label
+                  >Pesalink</q-item-label
                 >
               </q-item-section>
               <q-item-section class="col-4">

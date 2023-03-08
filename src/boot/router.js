@@ -17,6 +17,3 @@ export default boot(({ router }) => {
 });
 
 export { routerInstance };
-
-//usePageTransitionA, usePageTransitionB, usePageTransitionC
-//import into appropriate pages

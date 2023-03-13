@@ -22,6 +22,8 @@ const plumComponents = {
   plumTransit: require("components/PagePlumComponent/PlumTransit").default,
   plumTransitSearch: require("components/PagePlumComponent/plumTransitSearch")
     .default,
+  plumApplicationBtn: require("components/PagePlumComponent/plumApplicationBtn")
+    .default,
 };
 export default boot(async ({ app }) => {
   for (const key in plumComponents) {

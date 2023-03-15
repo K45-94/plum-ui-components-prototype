@@ -1,28 +1,30 @@
 import { boot } from "quasar/wrappers";
 
 const plumComponents = {
-  page: require("components/PagePlumComponent/Page").default,
-  pageHeader: require("components/PagePlumComponent/PageHeader").default,
-  pageHeaderButtonBackLeft:
+  Page: require("components/PagePlumComponent/Page").default,
+  PageHeader: require("components/PagePlumComponent/PageHeader").default,
+  PageHeaderButtonBackLeft:
     require("components/PagePlumComponent/PageHeaderButtonBackLeft").default,
-  pageHeaderButtonForwardRight:
+  PageHeaderButtonForwardRight:
     require("components/PagePlumComponent/PageHeaderButtonForwardRight")
       .default,
-  pageBody: require("components/PagePlumComponent/PageBody").default,
-  pageSettingsButton: require("components/PagePlumComponent/PageSettingsButton")
+  PageBody: require("components/PagePlumComponent/PageBody").default,
+  PageSettingsButton: require("components/PagePlumComponent/PageSettingsButton")
     .default,
-  pageButtonBack: require("components/PagePlumComponent/PageButtonBack")
+  PageButtonBack: require("components/PagePlumComponent/PageButtonBack")
     .default,
-  plumSendMoneyFormComponent:
+  PlumHeaderSearch: require("components/PagePlumComponent/PlumHeaderSearch")
+    .default,
+  PlumSendMoneyFormComponent:
     require("components/PagePlumComponent/PlumSendMoneyFormComponent").default,
-  plumBuygoodsFormComponent:
+  PlumBuygoodsFormComponent:
     require("components/PagePlumComponent/PlumBuygoodsFormComponent").default,
-  plumPaybillFormComponent:
+  PlumPaybillFormComponent:
     require("components/PagePlumComponent/PlumPaybillFormComponent").default,
-  plumTransit: require("components/PagePlumComponent/PlumTransit").default,
-  plumTransitSearch: require("components/PagePlumComponent/plumTransitSearch")
+  PlumTransit: require("components/PagePlumComponent/PlumTransit").default,
+  PlumTransitSearch: require("components/PagePlumComponent/plumTransitSearch")
     .default,
-  plumApplicationBtn: require("components/PagePlumComponent/plumApplicationBtn")
+  PlumApplicationBtn: require("components/PagePlumComponent/plumApplicationBtn")
     .default,
 };
 export default boot(async ({ app }) => {

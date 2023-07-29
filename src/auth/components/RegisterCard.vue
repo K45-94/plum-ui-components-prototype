@@ -66,7 +66,8 @@ const {
   </q-card>
 </template>
 
-<style lang="sass">
-.reg-card
-  background: linear-gradient(90deg, #ccc5b9 79%, #ccc5b9 15%)
+<style lang="scss">
+.reg-card {
+  background: linear-gradient(90deg, #00d546 15%, #00d546 85%);
+}
 </style>

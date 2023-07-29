@@ -72,17 +72,17 @@ export default boot(({ router }) => {
         {
           path: "/profile",
           meta: { authOnly: true },
-          component: () => import("src/pages/profile/PageProfile.vue"),
+          component: () => import("src/pages/Profile/PageProfile.vue"),
           children: [
             {
               path: "/profile/settings",
               meta: { authOnly: true },
-              component: () => import("src/pages/profile/PageSettings.vue"),
+              component: () => import("src/pages/Profile/PageSettings.vue"),
               children: [
                 {
                   path: "/profile/settings/themes",
                   meta: { authOnly: true },
-                  component: () => import("src/pages/profile/PageThemes.vue"),
+                  component: () => import("src/pages/Profile/PageThemes.vue"),
                 },
               ],
             },
@@ -90,28 +90,28 @@ export default boot(({ router }) => {
               path: "/profile/payments",
               meta: { authOnly: true },
               component: () =>
-                import("src/pages/profile/payments/PagePayments.vue"),
+                import("src/pages/Profile/Payments/PagePayments.vue"),
               name: "Payments",
               children: [
                 {
                   path: "/profile/payments/mpesawallet",
                   meta: { authOnly: true },
                   component: () =>
-                    import("pages/profile/payments/PageMpesa.vue"),
+                    import("pages/Profile/Payments/PageMpesa.vue"),
                   name: "mpesawallet",
                   children: [
                     {
                       path: "/profile/payments/mpesawallet/sendmpesa",
                       meta: { authOnly: true },
                       component: () =>
-                        import("pages/profile/payments/PageSendMpesa.vue"),
+                        import("pages/Profile/Payments/PageSendMpesa.vue"),
                       name: "sendmpesa",
                     },
                     {
                       path: "/profile/payments/mpesawallet/lipanampesa",
                       meta: { authOnly: true },
                       component: () =>
-                        import("pages/profile/payments/PageLipaNaMpesa.vue"),
+                        import("pages/Profile/Payments/PageLipaNaMpesa.vue"),
                       name: "lipanampesa",
                     },
                   ],
@@ -120,7 +120,7 @@ export default boot(({ router }) => {
                   path: "/profile/payments/airtelwallet",
                   meta: { authOnly: true },
                   component: () =>
-                    import("pages/profile/payments/PageAirtelMoney.vue"),
+                    import("pages/Profile/Payments/PageAirtelMoney.vue"),
                   name: "airtelwallet",
                   children: [
                     {
@@ -128,7 +128,7 @@ export default boot(({ router }) => {
                       meta: { authOnly: true },
                       component: () =>
                         import(
-                          "pages/profile/payments/PageSendAirtelMoney.vue"
+                          "pages/Profile/Payments/PageSendAirtelMoney.vue"
                         ),
                       name: "sendairtelmoney",
                     },
@@ -138,7 +138,7 @@ export default boot(({ router }) => {
                   path: "/profile/payments/telkomwallet",
                   meta: { authOnly: true },
                   component: () =>
-                    import("pages/profile/payments/PageTelkomMoney.vue"),
+                    import("pages/Profile/Payments/PageTelkomMoney.vue"),
                   name: "telkomwallet",
                   children: [
                     {
@@ -146,7 +146,7 @@ export default boot(({ router }) => {
                       meta: { authOnly: true },
                       component: () =>
                         import(
-                          "pages/profile/payments/PageSendTelkomMoney.vue"
+                          "pages/Profile/Payments/PageSendTelkomMoney.vue"
                         ),
                       name: "sendtelkommoney",
                     },
@@ -156,7 +156,7 @@ export default boot(({ router }) => {
                   path: "/profile/payments/paypalwallet",
                   meta: { authOnly: true },
                   component: () =>
-                    import("pages/profile/payments/PagePayPalMoney.vue"),
+                    import("pages/Profile/Payments/PagePayPalMoney.vue"),
                   name: "paypalwallet",
                   children: [
                     {
@@ -164,7 +164,7 @@ export default boot(({ router }) => {
                       meta: { authOnly: true },
                       component: () =>
                         import(
-                          "pages/profile/payments/PageSendPayPalMoney.vue"
+                          "pages/Profile/Payments/PageSendPayPalMoney.vue"
                         ),
                       name: "sendpaypalmoney",
                     },
@@ -174,7 +174,7 @@ export default boot(({ router }) => {
                   path: "/profile/payments/pesalinkwallet",
                   meta: { authOnly: true },
                   component: () =>
-                    import("pages/profile/payments/PagePesalinkMoney.vue"),
+                    import("pages/Profile/Payments/PagePesalinkMoney.vue"),
                   name: "pesalinkwallet",
                   children: [
                     {
@@ -182,7 +182,7 @@ export default boot(({ router }) => {
                       meta: { authOnly: true },
                       component: () =>
                         import(
-                          "pages/profile/payments/PageSendPesalinkMoney.vue"
+                          "pages/Profile/Payments/PageSendPesalinkMoney.vue"
                         ),
                       name: "sendpesalinklmoney",
                     },
@@ -193,13 +193,13 @@ export default boot(({ router }) => {
             {
               path: "/profile/users",
               meta: { authOnly: true },
-              component: () => import("src/pages/profile/PageUsers.vue"),
+              component: () => import("src/pages/Profile/PageUsers.vue"),
               name: "Users",
               children: [
                 {
                   path: "/profile/users/:id",
                   meta: { authOnly: true },
-                  component: () => import("src/pages/profile/PageChat.vue"),
+                  component: () => import("src/pages/Profile/PageChat.vue"),
                   name: "Chat",
                 },
               ],

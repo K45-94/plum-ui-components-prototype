@@ -16,7 +16,7 @@ const {
 
 <template>
   <q-card class="log-card" flat>
-    <q-card-section class="text-center">
+    <q-card-section class="text-center text-gradient">
       <!-- Login Form -->
       <AuthLoginForm
         v-model:email="form.email"
@@ -41,7 +41,8 @@ const {
     />
   </q-card>
 </template>
-<style lang="sass">
-.log-card
-  background: linear-gradient(90deg, #ccc5b9 79%, #ccc5b9 15%)
+<style lang="scss">
+.log-card {
+  background: linear-gradient(90deg, #00d546 15%, #00d546 85%);
+}
 </style>

@@ -59,7 +59,8 @@ async function onRequestResetClicked() {
     />
   </q-card>
 </template>
-<style lang="sass">
-.password-reset-request-card
-  background: linear-gradient(90deg, #ccc5b9 79%, #ccc5b9 15%)
+<style lang="scss">
+.password-reset-request-card {
+  background: linear-gradient(90deg, #00d546 15%, #00d546 85%);
+}
 </style>

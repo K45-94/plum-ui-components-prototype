@@ -14,7 +14,7 @@
       </q-input>
     </plum-header-search>
     <page-body>
-      <div class="q-pt-lg q-pb-md q-pl-md q-pr-md">
+      <div class="q-pt-lg q-pb-md q-pl-md q-pr-md text-gradient">
         <p v-for="i in 30" :key="i">
           Building Plum with vue 3. This app is getting complex and I thought I
           could redesign and rebuild it better with Vue 3 Finally found a way

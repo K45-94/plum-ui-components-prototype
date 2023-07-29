@@ -15,8 +15,8 @@
                 v-model="tab"
                 dense
                 class="text-grey"
-                active-color="primary"
-                indicator-color="primary"
+                active-color="secondary"
+                indicator-color="secondary"
                 align="justify"
                 narrow-indicator
               >
@@ -71,8 +71,8 @@ export default defineComponent({
 
 <style lang="sass">
 .q-card
-  background: linear-gradient(90deg,#CCC5B9 79%,#CCC5B9 15%)
+  background: linear-gradient(90deg,#000c04 15%, rgb(0, 0, 0) 85%)
 
 .q-tab-panels
-  background: linear-gradient(90deg,#CCC5B9 79%,#CCC5B9 15%)
+  background: linear-gradient(90deg,#000c04 15%, rgb(0, 0, 0) 85%)
 </style>

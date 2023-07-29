@@ -43,7 +43,7 @@
   .q-tab_icon {
     font-size: 24px;
   }
-  background: linear-gradient(145deg, #4a180e 15%, #4a180e 85%);
+  background: linear-gradient(90deg, #000c04 15%, rgb(0, 0, 0) 85%);
 }
 
 // page
@@ -78,7 +78,7 @@
       }
     }
   }
-  background: linear-gradient(90deg, #ccc5b9 79%, #ccc5b9 15%);
+  background: linear-gradient(90deg, #000c04 15%, rgb(0, 0, 0) 85%);
 }
 
 // ios notch safe margin & padding
@@ -122,6 +122,43 @@
   }
 }
 
+$text-gradient-colors: (
+  brand: #33ac51,
+  start: #33ac51,
+  mid1: #abb3ad,
+  mid2: #bbdfc4,
+  mid3: #abb3ad,
+  end: #33ac51,
+);
+
+@mixin text-gradient($color) {
+  $start-color: map-get($text-gradient-colors, start);
+  $mid1-color: map-get($text-gradient-colors, mid1);
+  $mid2-color: map-get($text-gradient-colors, mid2);
+  $mid3-color: map-get($text-gradient-colors, mid3);
+  $end-color: map-get($text-gradient-colors, end);
+
+  background: linear-gradient(
+    90.13deg,
+    $start-color 0.11%,
+    $mid1-color 25.06%,
+    $mid2-color 50%,
+    $mid3-color 74.8%,
+    $end-color 99.76%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+
+  &.text-brand {
+    color: map-get($text-gradient-colors, brand) !important;
+  }
+}
+
+.text-gradient {
+  @include text-gradient(null);
+}
 // transitions
 .slideInRight,
 .slideOutRight {
@@ -132,7 +169,7 @@
 }
 
 .q-header {
-  background: linear-gradient(145deg, #4a180e 15%, #4a180e 85%);
+  background: linear-gradient(90deg, #000c04 15%, rgb(0, 0, 0) 85%);
 }
 .q-toolbar {
   @media (min-width: $breakpoint-sm-min) {
@@ -145,4 +182,21 @@
   @media (max-width: $breakpoint-xs-max) {
     text-align: center;
   }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    transform: scaleY(1); // Eye open
+  }
+  50% {
+    transform: scaleY(0.1); // Eye closed
+  }
+}
+
+// Apply animation to the left and right eyes
+#left-eye,
+#right-eye {
+  transform-origin: center; // Set the pivot point for scaling
+  animation: blink 3s infinite; // Use the blink animation and repeat infinitely
 }

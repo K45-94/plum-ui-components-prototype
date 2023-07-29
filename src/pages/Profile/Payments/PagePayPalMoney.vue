@@ -16,10 +16,12 @@
                 clickable
               >
                 <q-item-section avatar class="col-4">
-                  <q-avatar color="secondary" text-color="white"> PL </q-avatar>
+                  <q-avatar color="primary" text-color="secondary">
+                    PL
+                  </q-avatar>
                 </q-item-section>
                 <q-item-section class="col-4">
-                  <q-item-label class="text-bold absolute-center"
+                  <q-item-label class="text-bold absolute-center text-secondary"
                     >Send From PayPal</q-item-label
                   >
                 </q-item-section>
@@ -30,7 +32,7 @@
                     icon="eva-arrow-ios-forward-outline"
                     flat
                     dense
-                    color="black"
+                    color="secondary"
                   />
                 </q-item-section>
               </q-item>
@@ -38,10 +40,12 @@
               <q-space class="q-pa-sm" />
               <q-item to="" clickable>
                 <q-item-section avatar class="col-4">
-                  <q-avatar color="secondary" text-color="white"> PL </q-avatar>
+                  <q-avatar color="primary" text-color="secondary">
+                    PL
+                  </q-avatar>
                 </q-item-section>
                 <q-item-section class="col-4">
-                  <q-item-label class="text-bold absolute-center"
+                  <q-item-label class="text-bold absolute-center text-secondary"
                     >Pay with PayPal</q-item-label
                   >
                 </q-item-section>
@@ -52,17 +56,19 @@
                     icon="eva-arrow-ios-forward-outline"
                     flat
                     dense
-                    color="black"
+                    color="secondary"
                   />
                 </q-item-section>
               </q-item>
               <q-space class="q-pa-sm" />
               <q-item to="" clickable>
                 <q-item-section avatar class="col-4">
-                  <q-avatar color="secondary" text-color="white"> B </q-avatar>
+                  <q-avatar color="primary" text-color="secondary">
+                    B
+                  </q-avatar>
                 </q-item-section>
                 <q-item-section class="col-4">
-                  <q-item-label class="text-bold absolute-center"
+                  <q-item-label class="text-bold absolute-center text-secondary"
                     >PayPal Balance</q-item-label
                   >
                 </q-item-section>
@@ -73,7 +79,7 @@
                     icon="eva-arrow-ios-forward-outline"
                     flat
                     dense
-                    color="black"
+                    color="secondary"
                   />
                 </q-item-section>
               </q-item>
@@ -100,5 +106,5 @@ export default defineComponent({
 
 <style lang="sass">
 .q-card
-  background: linear-gradient(90deg,#CCC5B9 79%,#CCC5B9 15%)
+  background: linear-gradient(90deg,#000c04 15%, rgb(0, 0, 0) 85%)
 </style>

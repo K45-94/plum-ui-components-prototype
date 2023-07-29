@@ -29,7 +29,7 @@
                 </q-item-section>
 
                 <q-item-section>
-                  <q-item-label class="text-bold">{{
+                  <q-item-label class="text-bold text-gradient">{{
                     feeds.accountName
                   }}</q-item-label>
                   <q-item-label caption> {{ feeds.location }} </q-item-label>
@@ -40,7 +40,7 @@
                 clickable
                 class="q-pt-sm q-pl-none q-pr-none q-pl-none q-pb-none"
               >
-                <div class="text-black">
+                <div class="text-gradient">
                   {{ feeds.post }}
                 </div></q-item
               >
@@ -83,7 +83,7 @@ export default defineComponent({
   border-radius: 0;
 }
 .q-card {
-  background-color: fade-out($color: #ccc5b9, $amount: 0);
+  background: linear-gradient(90deg, #000c04 15%, rgb(0, 0, 0) 85%);
   border-radius: 0;
 }
 </style>

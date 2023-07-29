@@ -13,10 +13,12 @@
             <q-list class="full-width">
               <q-item to="/profile/payments/mpesawallet/sendmpesa" clickable>
                 <q-item-section avatar class="col-4">
-                  <q-avatar color="secondary" text-color="white"> SM </q-avatar>
+                  <q-avatar color="primary" text-color="secondary">
+                    SM
+                  </q-avatar>
                 </q-item-section>
                 <q-item-section class="col-4">
-                  <q-item-label class="text-bold absolute-center"
+                  <q-item-label class="text-bold absolute-center text-secondary"
                     >Send From Mpesa</q-item-label
                   >
                 </q-item-section>
@@ -27,17 +29,19 @@
                     icon="eva-arrow-ios-forward-outline"
                     flat
                     dense
-                    color="black"
+                    color="secondary"
                   />
                 </q-item-section>
               </q-item>
               <q-space class="q-pa-sm" />
               <q-item to="/profile/payments/mpesawallet/lipanampesa" clickable>
                 <q-item-section avatar class="col-4">
-                  <q-avatar color="secondary" text-color="white"> LM </q-avatar>
+                  <q-avatar color="primary" text-color="secondary">
+                    LM
+                  </q-avatar>
                 </q-item-section>
                 <q-item-section class="col-4">
-                  <q-item-label class="text-bold absolute-center"
+                  <q-item-label class="text-bold absolute-center text-secondary"
                     >Lipa na M-PESA</q-item-label
                   >
                 </q-item-section>
@@ -48,17 +52,19 @@
                     icon="eva-arrow-ios-forward-outline"
                     flat
                     dense
-                    color="black"
+                    color="secondary"
                   />
                 </q-item-section>
               </q-item>
               <q-space class="q-pa-sm" />
               <q-item to="" clickable>
                 <q-item-section avatar class="col-4">
-                  <q-avatar color="secondary" text-color="white"> WC </q-avatar>
+                  <q-avatar color="primary" text-color="secondary">
+                    WC
+                  </q-avatar>
                 </q-item-section>
                 <q-item-section class="col-4">
-                  <q-item-label class="text-bold absolute-center"
+                  <q-item-label class="text-bold absolute-center text-secondary"
                     >Get Cash From Mpesa</q-item-label
                   >
                 </q-item-section>
@@ -69,17 +75,19 @@
                     icon="eva-arrow-ios-forward-outline"
                     flat
                     dense
-                    color="black"
+                    color="secondary"
                   />
                 </q-item-section>
               </q-item>
               <q-space class="q-pa-sm" />
               <q-item to="" clickable>
                 <q-item-section avatar class="col-4">
-                  <q-avatar color="secondary" text-color="white"> B </q-avatar>
+                  <q-avatar color="primary" text-color="secondary">
+                    B
+                  </q-avatar>
                 </q-item-section>
                 <q-item-section class="col-4">
-                  <q-item-label class="text-bold absolute-center"
+                  <q-item-label class="text-bold absolute-center text-secondary"
                     >Balance</q-item-label
                   >
                 </q-item-section>
@@ -90,7 +98,7 @@
                     icon="eva-arrow-ios-forward-outline"
                     flat
                     dense
-                    color="black"
+                    color="secondary"
                   />
                 </q-item-section>
               </q-item>
@@ -117,5 +125,5 @@ export default defineComponent({
 
 <style lang="sass">
 .q-card
-  background: linear-gradient(90deg,#CCC5B9 79%,#CCC5B9 15%)
+  background: linear-gradient(90deg,#000c04 15%, rgb(0, 0, 0) 85%)
 </style>

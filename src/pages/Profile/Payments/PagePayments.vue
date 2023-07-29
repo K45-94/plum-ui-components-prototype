@@ -12,10 +12,10 @@
           <q-list class="full-width">
             <q-item to="/profile/payments/mpesawallet" clickable>
               <q-item-section avatar class="col-4">
-                <q-avatar color="secondary" text-color="white"> M </q-avatar>
+                <q-avatar color="primary" text-color="secondary"> M </q-avatar>
               </q-item-section>
               <q-item-section class="col-4">
-                <q-item-label class="text-bold absolute-center"
+                <q-item-label class="text-bold absolute-center text-secondary"
                   >Mpesa</q-item-label
                 >
               </q-item-section>
@@ -26,19 +26,19 @@
                   icon="eva-arrow-ios-forward-outline"
                   flat
                   dense
-                  color="black"
+                  color="secondary"
                 >
-                  <q-badge color="green" floating>5</q-badge>
+                  <q-badge color="secondary" floating>5</q-badge>
                 </q-btn>
               </q-item-section>
             </q-item>
             <q-space class="q-pa-sm" />
             <q-item to="/profile/payments/airtelwallet" clickable>
               <q-item-section avatar class="col-4">
-                <q-avatar color="secondary" text-color="white"> A </q-avatar>
+                <q-avatar color="primary" text-color="secondary"> A </q-avatar>
               </q-item-section>
               <q-item-section class="col-4">
-                <q-item-label class="text-bold absolute-center"
+                <q-item-label class="text-bold absolute-center text-secondary"
                   >Airtel Money</q-item-label
                 >
               </q-item-section>
@@ -49,17 +49,17 @@
                   icon="eva-arrow-ios-forward-outline"
                   flat
                   dense
-                  color="black"
+                  color="secondary"
                 />
               </q-item-section>
             </q-item>
             <q-space class="q-pa-sm" />
             <q-item to="/profile/payments/telkomwallet" clickable>
               <q-item-section avatar class="col-4">
-                <q-avatar color="secondary" text-color="white"> T </q-avatar>
+                <q-avatar color="primary" text-color="secondary"> T </q-avatar>
               </q-item-section>
               <q-item-section class="col-4">
-                <q-item-label class="text-bold absolute-center"
+                <q-item-label class="text-bold absolute-center text-secondary"
                   >T-kash</q-item-label
                 >
               </q-item-section>
@@ -70,17 +70,17 @@
                   icon="eva-arrow-ios-forward-outline"
                   flat
                   dense
-                  color="black"
+                  color="secondary"
                 />
               </q-item-section>
             </q-item>
             <q-space class="q-pa-sm" />
             <q-item to="/profile/payments/paypalwallet" clickable>
               <q-item-section avatar class="col-4">
-                <q-avatar color="secondary" text-color="white"> PP </q-avatar>
+                <q-avatar color="primary" text-color="secondary"> PP </q-avatar>
               </q-item-section>
               <q-item-section class="col-4">
-                <q-item-label class="text-bold absolute-center"
+                <q-item-label class="text-bold absolute-center text-secondary"
                   >PayPal</q-item-label
                 >
               </q-item-section>
@@ -91,7 +91,7 @@
                   icon="eva-arrow-ios-forward-outline"
                   flat
                   dense
-                  color="black"
+                  color="secondary"
                 >
                   <q-badge color="blue" floating>3</q-badge>
                 </q-btn>
@@ -101,10 +101,10 @@
             <q-space class="q-pa-sm" />
             <q-item to="/profile/payments/pesalinkwallet" clickable>
               <q-item-section avatar class="col-4">
-                <q-avatar color="secondary" text-color="white"> P </q-avatar>
+                <q-avatar color="primary" text-color="secondary"> P </q-avatar>
               </q-item-section>
               <q-item-section class="col-4">
-                <q-item-label class="text-bold absolute-center"
+                <q-item-label class="text-bold absolute-center text-secondary"
                   >Pesalink</q-item-label
                 >
               </q-item-section>
@@ -115,7 +115,7 @@
                   icon="eva-arrow-ios-forward-outline"
                   flat
                   dense
-                  color="black"
+                  color="secondary"
                 >
                   <q-badge color="orange" floating>2</q-badge>
                 </q-btn>
@@ -143,5 +143,5 @@ export default defineComponent({
 
 <style lang="sass">
 .q-card
-  background: linear-gradient(90deg,#CCC5B9 79%,#CCC5B9 15%)
+  background: linear-gradient(90deg,#000c04 15%, rgb(0, 0, 0) 85%)
 </style>

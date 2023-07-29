@@ -130,10 +130,10 @@ export default {
   height: 51px;
 }
 .q-footer {
-  background: linear-gradient(145deg, #4a180e 15%, #4a180e 85%);
+  background: linear-gradient(90deg, #000c04 15%, rgb(0, 0, 0) 85%);
   height: 50px;
 }
 .q-drawer {
-  background: linear-gradient(90deg, #ccc5b9 79%, #ccc5b9 15%);
+  background: linear-gradient(90deg, #000c04 15%, rgb(0, 0, 0) 85%);
 }
 </style>

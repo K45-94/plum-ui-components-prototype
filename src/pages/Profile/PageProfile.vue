@@ -10,12 +10,12 @@
             <q-card flat>
               <q-item v-for="account in accounts" :key="account.id">
                 <q-item-section avatar>
-                  <q-avatar color="primary" text-color="white">
+                  <q-avatar color="primary" text-color="secondary">
                     {{ account.name.charAt(0) }}
                   </q-avatar>
                 </q-item-section>
 
-                <q-item-section>
+                <q-item-section class="text-secondary">
                   <q-item-label class="text-bold">Plum Account</q-item-label>
                   <q-item-label caption>@plumaccount</q-item-label>
                 </q-item-section>
@@ -62,23 +62,24 @@
             <q-list class="full-width">
               <q-item to="/profile/users" clickable>
                 <q-item-section avatar>
-                  <q-avatar color="primary" text-color="white"> C </q-avatar>
+                  <q-avatar color="primary" text-color="secondary">
+                    C
+                  </q-avatar>
                 </q-item-section>
                 <q-item-section class="col-4">
-                  <q-item-label class="text-bold absolute-center"
+                  <q-item-label class="text-bold absolute-center text-secondary"
                     >Communication List</q-item-label
                   >
                 </q-item-section>
                 <q-item-section class="col-4">
                   <q-btn
                     :ripple="true"
-                    class="absolute-right text-caption q-pa-sm q-ma-xs"
+                    class="absolute-right text-caption q-pa-sm q-ma-xs text-secondary"
                     flat
                     dense
                     to="/profile/users"
                     push
                     color="primary"
-                    text-color="black"
                     label="Unread"
                     no-caps
                   >
@@ -91,21 +92,23 @@
 
               <q-item to="/profile/payments" clickable>
                 <q-item-section avatar class="col-4">
-                  <q-avatar color="primary" text-color="white"> P </q-avatar>
+                  <q-avatar color="primary" text-color="secondary">
+                    P
+                  </q-avatar>
                 </q-item-section>
                 <q-item-section class="col-4">
-                  <q-item-label class="text-bold absolute-center"
+                  <q-item-label class="text-bold absolute-center text-secondary"
                     >Payments</q-item-label
                   >
                 </q-item-section>
                 <q-item-section class="col-4">
                   <q-btn
                     to="/profile/payments"
-                    class="absolute-right"
+                    class="absolute-right text-secondary"
                     icon="eva-arrow-ios-forward-outline"
                     flat
                     dense
-                    color="black"
+                    color="secondary"
                   />
                 </q-item-section>
               </q-item>
@@ -114,23 +117,23 @@
                 <q-item-section avatar class="col-4">
                   <q-avatar
                     color="primary"
-                    text-color="white"
+                    text-color="secondary"
                     icon="eva-settings-2"
                   ></q-avatar>
                 </q-item-section>
                 <q-item-section class="col-4">
-                  <q-item-label class="text-bold absolute-center"
+                  <q-item-label class="text-bold absolute-center text-secondary"
                     >Settings</q-item-label
                   >
                 </q-item-section>
                 <q-item-section class="col-4">
                   <q-btn
                     to="/profile/settings"
-                    class="absolute-right"
+                    class="absolute-right text-secondary"
                     icon="eva-arrow-ios-forward-outline"
                     flat
                     dense
-                    color="black"
+                    color="secondary"
                   />
                 </q-item-section>
               </q-item>
@@ -176,5 +179,5 @@ export default defineComponent({
 
 <style lang="sass">
 .q-card
-  background: linear-gradient(90deg,#CCC5B9 79%,#CCC5B9 15%)
+  background: linear-gradient(90deg,#000c04 15%, rgb(0, 0, 0) 85%)
 </style>

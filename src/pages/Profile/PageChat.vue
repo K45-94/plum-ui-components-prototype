@@ -169,7 +169,7 @@ export default defineComponent({
 
 <style lang="scss">
 .chat-type {
-  background: linear-gradient(145deg, #4a180e 15%, #4a180e 85%);
+  background: linear-gradient(145deg, #000c04 15%, rgb(0, 0, 0) 85%);
   height: 50px;
   width: 100%;
   border-top-right-radius: 10px;

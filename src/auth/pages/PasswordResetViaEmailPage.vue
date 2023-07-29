@@ -10,8 +10,9 @@ import PasswordResetCard from "src/auth/components/PasswordResetCard.vue";
     </div>
   </div>
 </template>
-<style lang="sass">
-.password-reset
-  background: linear-gradient(90deg, #ccc5b9 79%, #ccc5b9 15%)
-  min-height: 100vh
+<style lang="scss">
+.password-reset {
+  background: linear-gradient(90deg, #000c04 15%, rgb(0, 0, 0) 85%);
+  min-height: 100vh;
+}
 </style>

@@ -17,7 +17,7 @@
           />
           <div class="q-pt-md q-pb-md q-pl-none q-pr-none">
             <div class="text-h5 q-mb-md">{{ feed.caption }}</div>
-            <p v-for="i in 5" :key="i">
+            <p v-for="i in 5" :key="i" class="text-gradient">
               Building Plum with vue 3. This app is getting complex and I
               thought I could redesign and rebuild it better with Vue 3 Finally
               found a way for nesting child pages in routes.

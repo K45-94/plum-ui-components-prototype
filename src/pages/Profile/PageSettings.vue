@@ -13,7 +13,7 @@
             <q-card flat>
               <q-item>
                 <q-item-section class="col-6">
-                  <q-item-label class="text-bold center-left"
+                  <q-item-label class="text-bold center-left text-secondary"
                     >Notifications</q-item-label
                   >
                 </q-item-section>
@@ -33,7 +33,7 @@
             <q-card flat>
               <q-item>
                 <q-item-section class="col-6">
-                  <q-item-label class="text-bold center-left"
+                  <q-item-label class="text-bold center-left text-secondary"
                     >Security</q-item-label
                   >
                 </q-item-section>
@@ -44,7 +44,7 @@
                     icon="eva-arrow-ios-forward-outline"
                     flat
                     dense
-                    color="black"
+                    color="secondary"
                   />
                 </q-item-section>
               </q-item>
@@ -53,7 +53,7 @@
             <q-card flat>
               <q-item to="/profile/settings/themes">
                 <q-item-section class="col-6">
-                  <q-item-label class="text-bold center-left"
+                  <q-item-label class="text-bold center-left text-secondary"
                     >Display</q-item-label
                   >
                 </q-item-section>
@@ -64,7 +64,7 @@
                     icon="eva-arrow-ios-forward-outline"
                     flat
                     dense
-                    color="black"
+                    color="secondary"
                   />
                 </q-item-section>
               </q-item>
@@ -73,7 +73,7 @@
             <q-card flat>
               <q-item>
                 <q-item-section class="col-6">
-                  <q-item-label class="text-bold center-left"
+                  <q-item-label class="text-bold center-left text-secondary"
                     >Help n Support</q-item-label
                   >
                 </q-item-section>
@@ -84,7 +84,7 @@
                     icon="eva-arrow-ios-forward-outline"
                     flat
                     dense
-                    color="black"
+                    color="secondary"
                   />
                 </q-item-section>
               </q-item>
@@ -93,7 +93,7 @@
             <q-card flat>
               <q-item>
                 <q-item-section class="col-6">
-                  <q-item-label class="text-bold center-left"
+                  <q-item-label class="text-bold center-left text-secondary"
                     >About Plum</q-item-label
                   >
                 </q-item-section>
@@ -104,7 +104,7 @@
                     icon="eva-arrow-ios-forward-outline"
                     flat
                     dense
-                    color="black"
+                    color="secondary"
                   />
                 </q-item-section>
               </q-item>
@@ -145,7 +145,7 @@ export default defineComponent({
 
 <style lang="scss">
 .q-card {
-  background-color: fade-out($color: #ccc5b9, $amount: 0);
+  background: linear-gradient(90deg, #000c04 15%, rgb(0, 0, 0) 85%);
   border-radius: 0;
 }
 </style>

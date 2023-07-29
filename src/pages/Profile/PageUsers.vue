@@ -23,10 +23,13 @@
             </q-item-section>
 
             <q-item-section>
-              <q-item-label class="text-subtitle2 text-weight-bold">{{
-                user.name
+              <q-item-label
+                class="text-subtitle2 text-weight-bold text-gradient"
+                >{{ user.name }}</q-item-label
+              >
+              <q-item-label caption lines="2" class="text-secondary">{{
+                user.chat
               }}</q-item-label>
-              <q-item-label caption lines="2">{{ user.chat }}</q-item-label>
             </q-item-section>
 
             <q-item-section side>

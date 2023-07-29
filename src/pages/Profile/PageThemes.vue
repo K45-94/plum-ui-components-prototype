@@ -8,7 +8,7 @@
     </page-header>
     <page-body>
       <div class="q-pt-lg q-pb-md q-pl-lg q-pr-lg">
-        <div class="q-col-gutter-lg">
+        <div class="q-col-gutter-lg text-secondary">
           <q-option-group
             type="radio"
             v-model="themes"
@@ -17,7 +17,7 @@
           />
           <q-space />
           <div class="row q-pt-none">
-            <p class="q-mb-none">Color</p>
+            <p class="q-mb-none text-secondary">Color</p>
 
             <q-list class="relative-position">
               <div class="center">
@@ -126,7 +126,8 @@ export default defineComponent({
   },
 });
 </script>
-<style lang="sass">
-.colours
-  background: linear-gradient(90deg,#ccba9a 79%,#ccba9a 15%)
+<style lang="scss">
+.colours {
+  background: linear-gradient(90deg, #000c04 15%, rgb(0, 0, 0) 85%);
+}
 </style>

@@ -31,39 +31,51 @@ const routes = [
       },
       {
         path: "/profile",
-        component: () => import("src/pages/profile/PageProfile.vue"),
+        component: () => import("src/pages/Profile/PageProfile.vue"),
         children: [
           {
+            path: "/profile/users",
+            component: () => import("src/pages/Profile/PageUsers.vue"),
+            name: "Users",
+            children: [
+              {
+                path: "/profile/users/:id",
+                component: () => import("src/pages/Profile/PageChat.vue"),
+                name: "Chat",
+              },
+            ],
+          },
+          {
             path: "/profile/settings",
-            component: () => import("src/pages/profile/PageSettings.vue"),
+            component: () => import("src/pages/Profile/PageSettings.vue"),
             children: [
               {
                 path: "/profile/settings/themes",
-                component: () => import("src/pages/profile/PageThemes.vue"),
+                component: () => import("src/pages/Profile/PageThemes.vue"),
               },
             ],
           },
           {
             path: "/profile/payments",
             component: () =>
-              import("src/pages/profile/payments/PagePayments.vue"),
+              import("src/pages/Profile/Payments/PagePayments.vue"),
             name: "Payments",
             children: [
               {
                 path: "/profile/payments/mpesawallet",
-                component: () => import("pages/profile/payments/PageMpesa.vue"),
+                component: () => import("pages/Profile/Payments/PageMpesa.vue"),
                 name: "mpesawallet",
                 children: [
                   {
                     path: "/profile/payments/mpesawallet/sendmpesa",
                     component: () =>
-                      import("pages/profile/payments/PageSendMpesa.vue"),
+                      import("pages/Profile/Payments/PageSendMpesa.vue"),
                     name: "sendmpesa",
                   },
                   {
                     path: "/profile/payments/mpesawallet/lipanampesa",
                     component: () =>
-                      import("pages/profile/payments/PageLipaNaMpesa.vue"),
+                      import("pages/Profile/Payments/PageLipaNaMpesa.vue"),
                     name: "lipanampesa",
                   },
                 ],
@@ -71,13 +83,13 @@ const routes = [
               {
                 path: "/profile/payments/airtelwallet",
                 component: () =>
-                  import("pages/profile/payments/PageAirtelMoney.vue"),
+                  import("pages/Profile/Payments/PageAirtelMoney.vue"),
                 name: "airtelwallet",
                 children: [
                   {
                     path: "/profile/payments/airtelwallet/sendairtelmoney",
                     component: () =>
-                      import("pages/profile/payments/PageSendAirtelMoney.vue"),
+                      import("pages/Profile/Payments/PageSendAirtelMoney.vue"),
                     name: "sendairtelmoney",
                   },
                 ],
@@ -85,13 +97,13 @@ const routes = [
               {
                 path: "/profile/payments/telkomwallet",
                 component: () =>
-                  import("pages/profile/payments/PageTelkomMoney.vue"),
+                  import("pages/Profile/Payments/PageTelkomMoney.vue"),
                 name: "telkomwallet",
                 children: [
                   {
                     path: "/profile/payments/telkomwallet/sendtelkommoney",
                     component: () =>
-                      import("pages/profile/payments/PageSendTelkomMoney.vue"),
+                      import("pages/Profile/Payments/PageSendTelkomMoney.vue"),
                     name: "sendtelkommoney",
                   },
                 ],
@@ -99,13 +111,13 @@ const routes = [
               {
                 path: "/profile/payments/paypalwallet",
                 component: () =>
-                  import("pages/profile/payments/PagePayPalMoney.vue"),
+                  import("pages/Profile/Payments/PagePayPalMoney.vue"),
                 name: "paypalwallet",
                 children: [
                   {
                     path: "/profile/payments/paypalwallet/sendpaypalmoney",
                     component: () =>
-                      import("pages/profile/payments/PageSendPayPalMoney.vue"),
+                      import("pages/Profile/Payments/PageSendPayPalMoney.vue"),
                     name: "sendpaypalmoney",
                   },
                 ],
@@ -113,30 +125,18 @@ const routes = [
               {
                 path: "/profile/payments/pesalinkwallet",
                 component: () =>
-                  import("pages/profile/payments/PagePesalinkMoney.vue"),
+                  import("pages/Profile/Payments/PagePesalinkMoney.vue"),
                 name: "pesalinkwallet",
                 children: [
                   {
                     path: "/profile/payments/pesalinkwallet/sendpesalinkmoney",
                     component: () =>
                       import(
-                        "pages/profile/payments/PageSendPesalinkMoney.vue"
+                        "pages/Profile/Payments/PageSendPesalinkMoney.vue"
                       ),
                     name: "sendpesalinklmoney",
                   },
                 ],
-              },
-            ],
-          },
-          {
-            path: "/profile/users",
-            component: () => import("src/pages/profile/PageUsers.vue"),
-            name: "Users",
-            children: [
-              {
-                path: "/profile/users/:id",
-                component: () => import("src/pages/profile/PageChat.vue"),
-                name: "Chat",
               },
             ],
           },
@@ -145,11 +145,11 @@ const routes = [
     ],
   },
   {
-    path: "/",
+    path: "/light",
     component: () => import("src/layouts/PlumTransitLayout.vue"),
     children: [
       {
-        path: "/light",
+        path: "",
         component: () => import("src/pages/PageLight.vue"),
       },
     ],

@@ -21,7 +21,7 @@
           v-if="hasCameraSupport"
           @click="captureImage"
           round
-          color="blue-grey"
+          color="secondary"
           icon="camera"
         />
         <q-file
@@ -31,12 +31,14 @@
           outlined
           accept="image/"
           v-model="imageUpload"
+          color="secondary"
+          clear-icon="text-secondary"
         >
           <template v-slot:prepend>
             <q-icon name="eva-attach-outline" />
           </template>
         </q-file>
-        <div class="row justify-center q-ma-md">
+        <div class="row justify-center q-ma-md text-secondary">
           <q-input
             v-model="post.caption"
             class="col col-sm-6"
@@ -48,15 +50,16 @@
           <q-input
             v-model="post.location"
             :loading="locationLoading"
-            class="col col-sm-6"
+            class="col col-sm-6 text-secondary"
             placeholder="Location"
             dense
+            color="secondary"
           >
             <template v-slot:append>
               <q-btn
                 v-if="!locationLoading"
                 @click="getLocation"
-                color="black"
+                color="secondary"
                 round
                 dense
                 flat
@@ -67,7 +70,7 @@
         </div>
         <div class="row justify-center q-mt-lg">
           <q-btn
-            class="shadow-4"
+            class="text-secondary"
             @click="addPost()"
             color="secondary"
             label="Post"
@@ -225,3 +228,12 @@ export default defineComponent({
   },
 });
 </script>
+
+<style lang="scss">
+.q-field__native,
+.q-field__prefix,
+.q-field__suffix,
+.q-field__input {
+  color: #33ac51;
+}
+</style>

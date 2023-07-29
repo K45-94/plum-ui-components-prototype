@@ -16,10 +16,12 @@
                 clickable
               >
                 <q-item-section avatar class="col-4">
-                  <q-avatar color="secondary" text-color="white"> TK </q-avatar>
+                  <q-avatar color="primary" text-color="secondary">
+                    TK
+                  </q-avatar>
                 </q-item-section>
                 <q-item-section class="col-4">
-                  <q-item-label class="text-bold absolute-center"
+                  <q-item-label class="text-bold absolute-center text-secondary"
                     >Send From T-kash</q-item-label
                   >
                 </q-item-section>
@@ -30,17 +32,19 @@
                     icon="eva-arrow-ios-forward-outline"
                     flat
                     dense
-                    color="black"
+                    color="secondary"
                   />
                 </q-item-section>
               </q-item>
               <q-space class="q-pa-sm" />
               <q-item to="" clickable>
                 <q-item-section avatar class="col-2">
-                  <q-avatar color="secondary" text-color="white"> WC </q-avatar>
+                  <q-avatar color="primary" text-color="secondary">
+                    WC
+                  </q-avatar>
                 </q-item-section>
                 <q-item-section class="col-8">
-                  <q-item-label class="text-bold absolute-center"
+                  <q-item-label class="text-bold absolute-center text-secondary"
                     >Get Cash From T-kash</q-item-label
                   >
                 </q-item-section>
@@ -51,17 +55,19 @@
                     icon="eva-arrow-ios-forward-outline"
                     flat
                     dense
-                    color="black"
+                    color="secondary"
                   />
                 </q-item-section>
               </q-item>
               <q-space class="q-pa-sm" />
               <q-item to="" clickable>
                 <q-item-section avatar class="col-4">
-                  <q-avatar color="secondary" text-color="white"> LT </q-avatar>
+                  <q-avatar color="primary" text-color="secondary">
+                    LT
+                  </q-avatar>
                 </q-item-section>
                 <q-item-section class="col-4">
-                  <q-item-label class="text-bold absolute-center"
+                  <q-item-label class="text-bold absolute-center text-secondary"
                     >Pay With T-Kash</q-item-label
                   >
                 </q-item-section>
@@ -72,17 +78,19 @@
                     icon="eva-arrow-ios-forward-outline"
                     flat
                     dense
-                    color="black"
+                    color="secondary"
                   />
                 </q-item-section>
               </q-item>
               <q-space class="q-pa-sm" />
               <q-item to="" clickable>
                 <q-item-section avatar class="col-4">
-                  <q-avatar color="secondary" text-color="white"> B </q-avatar>
+                  <q-avatar color="primary" text-color="secondary">
+                    B
+                  </q-avatar>
                 </q-item-section>
                 <q-item-section class="col-4">
-                  <q-item-label class="text-bold absolute-center"
+                  <q-item-label class="text-bold absolute-center text-secondary"
                     >T-Kash Balance</q-item-label
                   >
                 </q-item-section>
@@ -93,7 +101,7 @@
                     icon="eva-arrow-ios-forward-outline"
                     flat
                     dense
-                    color="black"
+                    color="secondary"
                   />
                 </q-item-section>
               </q-item>
@@ -120,5 +128,5 @@ export default defineComponent({
 
 <style lang="sass">
 .q-card
-  background: linear-gradient(90deg,#CCC5B9 79%,#CCC5B9 15%)
+  background: linear-gradient(90deg,#000c04 15%, rgb(0, 0, 0) 85%)
 </style>

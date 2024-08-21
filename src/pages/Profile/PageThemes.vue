@@ -1,5 +1,5 @@
 <template>
-  <page>
+  <page :class="backgroundClass">
     <page-header>
       <template #button-left>
         <page-header-button-back-left label="settings" />
@@ -95,39 +95,49 @@
 </template>
 
 <script>
+import { ref, watch, defineComponent } from "vue";
 import Page from "src/components/PagePlumComponent/Page.vue";
 import PageHeader from "src/components/PagePlumComponent/PageHeader.vue";
 import PageHeaderButtonBackLeft from "src/components/PagePlumComponent/PageHeaderButtonBackLeft.vue";
-import { ref, defineComponent } from "vue";
+import store from "src/plumStore";
 
 export default defineComponent({
   components: [Page, PageHeader, PageHeaderButtonBackLeft],
   name: "PageThemes",
   setup() {
+    const themes = ref("op2");
+    const backgroundClass = ref("");
+
+    const select = [
+      { label: "Bright background", value: "op1" },
+      { label: "Dim background", value: "op2" },
+      { label: "Dark background", value: "op3" },
+    ];
+
+    const textModel = ref(2);
+    const fontWeightModel = ref(2);
+
+    // Watch for changes in themes and update the background class
+    watch(themes, (newVal) => {
+      if (newVal === "op1") {
+        backgroundClass.value = "bright-background";
+        store.state.theme = "bright-background";
+      } else if (newVal === "op2") {
+        backgroundClass.value = "dim-background";
+        store.state.theme = "dim-background";
+      } else if (newVal === "op3") {
+        backgroundClass.value = "dark-background";
+        store.state.theme = "dark-background";
+      }
+    });
+
     return {
-      themes: ref("op3"),
-      select: [
-        {
-          label: "Bright background",
-          value: "op1",
-        },
-        {
-          label: "Dim background",
-          value: "op2",
-        },
-        {
-          label: "Dark background",
-          value: "op3",
-        },
-      ],
-      textModel: ref(2),
-      fontWeightModel: ref(2),
+      themes,
+      select,
+      textModel,
+      fontWeightModel,
+      backgroundClass,
     };
   },
 });
 </script>
-<style lang="scss">
-.colours {
-  background: linear-gradient(90deg, #000c04 15%, rgb(0, 0, 0) 85%);
-}
-</style>

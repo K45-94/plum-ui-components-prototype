@@ -12,31 +12,31 @@
     "build": "quasar build"
   },
   "dependencies": {
-    "@quasar/cli": "^2.0.0",
-    "@quasar/extras": "^1.13.5",
-    "@supabase/supabase-js": "^1.28.5",
-    "@tomtom-international/web-sdk-maps": "^6.20.0",
-    "@tomtom-international/web-sdk-services": "^6.20.0",
+    "@quasar/cli": "^2.4.1",
+    "@quasar/extras": "^1.16.12",
+    "@supabase/supabase-js": "^2.45.1",
+    "@tomtom-international/web-sdk-maps": "^6.25.0",
+    "@tomtom-international/web-sdk-services": "^6.25.0",
     "@vueauth/supabase": "^1.0.0-alpha.20",
-    "axios": "^0.21.4",
-    "core-js": "^3.6.5",
-    "quasar": "^2.6.6",
-    "vue": "^3.0.0",
-    "vue-i18n": "^9.0.0",
-    "vue-router": "^4.0.0"
+    "axios": "^1.7.3",
+    "core-js": "^3.38.0",
+    "quasar": "^2.16.8",
+    "vue": "^3.4.37",
+    "vue-i18n": "^9.13.1",
+    "vue-router": "^4.4.3"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.13.14",
-    "@quasar/app-webpack": "^3.5.1",
+    "@babel/eslint-parser": "^7.25.1",
+    "@quasar/app-webpack": "^3.13.3",
     "@volar-plugins/vetur": "latest",
-    "@vueauth/quasar-app-extension-auth": "^1.0.0-alpha.29",
-    "eslint": "^7.14.0",
-    "eslint-config-prettier": "^8.1.0",
-    "eslint-plugin-vue": "^7.0.0",
-    "eslint-webpack-plugin": "^2.4.0",
+    "@vueauth/quasar-app-extension-auth": "^1.0.0-alpha.30",
+    "eslint": "^9.9.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-vue": "^9.27.0",
+    "eslint-webpack-plugin": "^4.2.0",
     "git-scripts": "^0.6.4",
-    "prettier": "^2.5.1",
-    "surge": "^0.23.1"
+    "prettier": "^3.3.3",
+    "surge": "^0.24.6"
   },
   "git": {
     "scripts": {

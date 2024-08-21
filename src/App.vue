@@ -1,9 +1,20 @@
 <template>
-  <router-view />
+  <div :class="themeClass">
+    <router-view />
+  </div>
 </template>
+
 <script>
-import { defineComponent } from "vue";
-export default defineComponent({
-  name: "App",
-});
+import { computed } from "vue";
+import store from "src/plumStore";
+
+export default {
+  setup() {
+    const themeClass = computed(() => store.state.theme);
+
+    return {
+      themeClass,
+    };
+  },
+};
 </script>

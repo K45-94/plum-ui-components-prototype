@@ -43,6 +43,6 @@ const {
 </template>
 <style lang="scss">
 .log-card {
-  background: linear-gradient(90deg, #00d546 15%, #00d546 85%);
+  background: linear-gradient(120deg, #000c04 15%, rgb(255, 255, 255) 85%);
 }
 </style>

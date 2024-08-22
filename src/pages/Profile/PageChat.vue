@@ -169,12 +169,12 @@ export default defineComponent({
 
 <style lang="scss">
 .chat-type {
-  background: linear-gradient(145deg, #000c04 15%, rgb(0, 0, 0) 85%);
+  background: linear-gradient(145deg, #000c045e 15%, rgba(0, 0, 0, 0.384) 85%);
   height: 50px;
   width: 100%;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
-  border-bottom-color: #4a180e;
+  border-bottom-color: #4a180e77;
 }
 .pop-up {
   border-top-right-radius: 10px;

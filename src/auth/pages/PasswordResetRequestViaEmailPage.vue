@@ -19,7 +19,7 @@ import PasswordResetRequestCard from "src/auth/components/PasswordResetRequestCa
 </template>
 <style lang="scss">
 .password-reset {
-  background: linear-gradient(90deg, #000c04 15%, rgb(0, 0, 0) 85%);
+  background: linear-gradient(120deg, #000c04 15%, rgb(255, 255, 255) 85%);
   min-height: 100vh;
 }
 </style>

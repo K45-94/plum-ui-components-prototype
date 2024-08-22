@@ -83,7 +83,7 @@ export default defineComponent({
   border-radius: 0;
 }
 .q-card {
-  background: linear-gradient(90deg, #000c04 15%, rgb(0, 0, 0) 85%);
+  background: linear-gradient(90deg, #000c04 15%, rgba(0, 0, 0, 0) 85%);
   border-radius: 0;
 }
 </style>

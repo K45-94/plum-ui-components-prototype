@@ -105,6 +105,6 @@ export default defineComponent({
 </script>
 
 <style lang="sass">
-.q-card
-  background: linear-gradient(90deg,#000c04 15%, rgb(0, 0, 0) 85%)
+// .q-card
+  // background: linear-gradient(90deg,#000c04 15%, rgb(0, 0, 0) 85%)
 </style>

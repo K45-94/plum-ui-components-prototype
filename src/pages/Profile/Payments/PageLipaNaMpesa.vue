@@ -68,8 +68,3 @@ export default defineComponent({
   },
 });
 </script>
-<style lang="scss">
-.q-tab-panels {
-  background: linear-gradient(90deg, #c7edd1 15%, #c7edd1 85%);
-}
-</style>

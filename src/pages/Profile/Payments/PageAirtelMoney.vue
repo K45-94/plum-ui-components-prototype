@@ -125,5 +125,3 @@ export default defineComponent({
   name: "airtelwallet",
 });
 </script>
-
-<style lang="sass"></style>

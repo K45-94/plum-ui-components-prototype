@@ -103,8 +103,3 @@ export default defineComponent({
   name: "pesalinkwallet",
 });
 </script>
-
-<style lang="sass">
-// .q-card
-  // background: linear-gradient(90deg,#000c04 15%, rgb(0, 0, 0) 85%)
-</style>

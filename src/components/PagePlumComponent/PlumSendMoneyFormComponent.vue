@@ -55,13 +55,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss">
-.q-form {
-  background: linear-gradient(90deg, #000c0400 15%, rgba(0, 0, 0, 0) 85%);
-}
-
-.q-input {
-  background: linear-gradient(90deg, #000c0400 15%, rgba(0, 0, 0, 0) 85%);
-}
-</style>

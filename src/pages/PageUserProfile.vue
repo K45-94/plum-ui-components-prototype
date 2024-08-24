@@ -81,7 +81,6 @@ export default defineComponent({
 
 <style lang="scss">
 .q-card {
-  background: linear-gradient(90deg, #000c0400 15%, rgba(0, 0, 0, 0) 85%);
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
 }

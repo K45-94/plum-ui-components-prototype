@@ -32,7 +32,7 @@ const emit = defineEmits(["update:email", "update:password"]);
       :error="!!validationErrors?.['email']"
       :error-message="validationErrors?.['email']?.[0]"
       class="q-mb-md"
-      color="secondary"
+      color="accent"
       hide-bottom-space
       @update:model-value="(value) => emit('update:email', value)"
     />

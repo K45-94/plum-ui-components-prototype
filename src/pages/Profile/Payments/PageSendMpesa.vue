@@ -15,11 +15,12 @@
                 v-model="tab"
                 dense
                 class="text-grey"
-                active-color="secondary"
-                indicator-color="secondary"
+                active-color="positive"
+                indicator-color="info"
                 align="justify"
                 narrow-indicator
               >
+                //cchange component color dynamicaly
                 <q-tab name="sendmoney" label="Send money" />
                 <q-tab name="othernetwork" label="Other network" />
               </q-tabs>
@@ -68,9 +69,9 @@ export default defineComponent({
 </script>
 
 <style lang="sass">
-// .q-card
-  // background: linear-gradient(90deg,#000c04 15%, rgb(0, 0, 0) 85%)
+ .q-tab-panel
+  background: linear-gradient(90deg,#ffffff 15%, #ffffff 85%)
 
-// .q-tab-panels
- // background: linear-gradient(90deg,#000c04 15%, rgb(0, 0, 0) 85%)
+.q-tab-panels
+ background: linear-gradient(90deg,#000c04 15%, rgb(0, 0, 0) 85%)
 </style>

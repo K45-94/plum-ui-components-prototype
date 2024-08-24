@@ -36,12 +36,16 @@
                   </q-item-section>
 
                   <q-item-section>
-                    <q-item-label class="text-bold">Plum Account</q-item-label>
-                    <q-item-label caption> post location </q-item-label>
+                    <q-item-label class="text-bold text-green"
+                      >Plum Account</q-item-label
+                    >
+                    <q-item-label caption class="text-gradient">
+                      post location
+                    </q-item-label>
                   </q-item-section>
                 </q-item>
                 <q-item to="" clickable class="q-pa-none">
-                  <div class="text-black">
+                  <div class="text-gradient">
                     A microblogging platform with very minimal user
                     interactions. No like buttons, no reposts/retweets.
                     Propaganda or fake news can be limited because posts are not
@@ -77,7 +81,7 @@ export default defineComponent({
 
 <style lang="scss">
 .q-card {
-  background: linear-gradient(90deg, #000c0417 15%, rgba(0, 0, 0, 0.123) 85%);
+  background: linear-gradient(90deg, #000c0400 15%, rgba(0, 0, 0, 0) 85%);
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
 }

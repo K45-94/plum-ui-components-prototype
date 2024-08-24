@@ -80,10 +80,12 @@ export default defineComponent({
   position: relative;
   left: 49%;
   transform: translateX(-49.7%);
-  border-radius: 0;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 .q-card {
-  background: linear-gradient(90deg, #000c04 15%, rgba(0, 0, 0, 0) 85%);
-  border-radius: 0;
+  background: linear-gradient(90deg, #000c0400 15%, rgba(0, 0, 0, 0) 85%);
 }
 </style>

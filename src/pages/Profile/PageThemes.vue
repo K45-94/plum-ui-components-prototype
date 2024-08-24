@@ -18,7 +18,6 @@
           <q-space />
           <div class="row q-pt-none">
             <p class="q-mb-none text-secondary">Color</p>
-
             <q-list class="relative-position">
               <div class="center">
                 <q-btn round color="red-10" size="16px" class="q-ma-md" />
@@ -60,6 +59,7 @@
               </template>
             </q-slider>
           </div>
+
           <q-space />
           <div>
             <p>Change font weight</p>
@@ -105,17 +105,16 @@ export default defineComponent({
   components: [Page, PageHeader, PageHeaderButtonBackLeft],
   name: "PageThemes",
   setup() {
-    const themes = ref("op2");
+    const themes = ref("op3");
     const backgroundClass = ref("");
+    const textModel = ref(2); // Default to medium size
+    const fontWeightModel = ref(2);
 
     const select = [
       { label: "Bright background", value: "op1" },
       { label: "Dim background", value: "op2" },
       { label: "Dark background", value: "op3" },
     ];
-
-    const textModel = ref(2);
-    const fontWeightModel = ref(2);
 
     // Watch for changes in themes and update the background class
     watch(themes, (newVal) => {
@@ -129,6 +128,13 @@ export default defineComponent({
         backgroundClass.value = "dark-background";
         store.state.theme = "dark-background";
       }
+    });
+
+    // Watcher for textModel to adjust text size
+    watch(textModel, (newSize) => {
+      const sizeClasses = ["sm", "md", "lg", "xl"];
+      const sizeClass = sizeClasses[newSize] || "md"; // Default to 'md'
+      document.documentElement.setAttribute("data-text-sizes", sizeClass);
     });
 
     return {

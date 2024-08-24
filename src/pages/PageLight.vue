@@ -1,10 +1,7 @@
 <template>
   <q-page>
     <div>
-      <plum-transit
-        city="Nairobi"
-        apikey="ptqyBW77etZLythXEOSzw46Zm1QofiQN"
-      ></plum-transit>
+      <plum-transit city="Nairobi" apikey="#"></plum-transit>
     </div>
     <div class="page-body-spacer-footer"></div>
   </q-page>

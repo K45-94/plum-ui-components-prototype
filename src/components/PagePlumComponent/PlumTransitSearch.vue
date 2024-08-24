@@ -1,6 +1,4 @@
 <script>
-import tt from "@tomtom-international/web-sdk-services";
-
 export default {
   name: "PlumTransitSearch",
   props: ["city", "apikey"],

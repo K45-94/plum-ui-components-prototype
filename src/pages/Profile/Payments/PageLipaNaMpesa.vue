@@ -10,7 +10,7 @@
       <div class="constrain q-pt-lg q-pb-md q-pl-lg q-pr-lg">
         <div class="row q-col-gutter-lg">
           <div class="col-12 col-sm-8">
-            <q-card>
+            <q-card class="moneypan">
               <q-tabs
                 v-model="tab"
                 dense
@@ -70,9 +70,9 @@ export default defineComponent({
 </script>
 
 <style lang="sass">
-// .q-card
-  // background: linear-gradient(90deg,#000c04 15%, rgb(0, 0, 0) 85%)
+ .q-card
+   background: linear-gradient(90deg,#c7edd1 15%, #c7edd1 85%)
 
-// .q-tab-panels
-  // background: linear-gradient(90deg,#000c04 15%, rgb(0, 0, 0) 85%)
+.q-tab-panels
+   background: linear-gradient(90deg,#c7edd1 15%, #c7edd1 85%)
 </style>

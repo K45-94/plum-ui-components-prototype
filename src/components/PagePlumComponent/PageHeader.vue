@@ -1,5 +1,10 @@
 <template>
-  <header class="page-header q-header q-layout__section fixed-top">
+  <header
+    :class="[
+      'page-header q-header q-layout__section',
+      { 'fixed-top': !isScrolling, 'hide-header': isScrolling },
+    ]"
+  >
     <div class="q-toolbar row no-wrap items-center" active-color="secondary">
       <slot name="button-left" />
       <div
@@ -104,7 +109,30 @@
 <script>
 export default {
   name: "PageHeader",
+  data() {
+    return {
+      isScrolling: false,
+    };
+  },
+  mounted() {
+    window.addEventListener("scroll", this.handleScroll);
+  },
+  beforeUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
+  },
+  methods: {
+    handleScroll() {
+      this.isScrolling = window.scrollY > 0;
+    },
+  },
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+.hide-header {
+  transform: translateY(-100%);
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+</style>

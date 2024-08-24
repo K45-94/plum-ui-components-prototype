@@ -20,7 +20,6 @@
                 align="justify"
                 narrow-indicator
               >
-                //cchange component color dynamicaly
                 <q-tab name="sendmoney" label="Send money" />
                 <q-tab name="othernetwork" label="Other network" />
               </q-tabs>

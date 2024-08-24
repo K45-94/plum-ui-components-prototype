@@ -105,7 +105,7 @@ export default defineComponent({
   components: [Page, PageHeader, PageHeaderButtonBackLeft],
   name: "PageThemes",
   setup() {
-    const themes = ref("op3");
+    const themes = ref("op2");
     const backgroundClass = ref("");
     const textModel = ref(2); // Default to medium size
     const fontWeightModel = ref(2);

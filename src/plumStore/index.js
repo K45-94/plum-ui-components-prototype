@@ -280,7 +280,7 @@ const state = reactive({
   ],
 
   usePageTransition: false,
-  theme: "dark-background", // Default theme
+  theme: "dim-background", // Default theme
 });
 
 const getters = {

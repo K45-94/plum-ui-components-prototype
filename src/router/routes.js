@@ -4,8 +4,8 @@ const routes = [
     component: () => import("src/layouts/PlumLayout.vue"),
     children: [
       {
-        path: "", // Default path redirect
-        redirect: "/login",
+        path: "",
+        redirect: "/feeds",
       },
       {
         path: "feeds", // Relative path without leading slash

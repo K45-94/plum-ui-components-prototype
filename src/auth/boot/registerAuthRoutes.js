@@ -222,6 +222,6 @@ export default boot(({ router }) => {
     {
       path: "/:catchAll(.*)*",
       component: () => import("pages/Error404.vue"),
-    }
+    },
   );
 });

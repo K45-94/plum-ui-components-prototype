@@ -26,6 +26,14 @@ const routes = [
         component: () => import("src/pages/PageCamera.vue"),
       },
       {
+        path: "search", // Relative path without leading slash
+        component: () => import("src/pages/PageSearch.vue"),
+      },
+      {
+        path: "light",
+        component: () => import("src/pages/PageLight.vue"),
+      },
+      {
         path: ":name", // Dynamic route for user profile
         component: () => import("src/pages/PageUserProfile.vue"),
       },
@@ -144,16 +152,7 @@ const routes = [
       },
     ],
   },
-  {
-    path: "/light",
-    component: () => import("src/layouts/PlumTransitLayout.vue"),
-    children: [
-      {
-        path: "",
-        component: () => import("src/pages/PageLight.vue"),
-      },
-    ],
-  },
+
   {
     path: "/:catchAll(.*)*", // Catch-all route for 404 errors
     component: () => import("pages/Error404.vue"),

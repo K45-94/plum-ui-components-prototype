@@ -5,6 +5,8 @@
     </page-header>
     <page-body>
       <div class="q-pt-lg q-pb-md q-pl-lg q-pr-lg">
+        <!-- Inputs for power consumption, hours used, and quantity -->
+
         <q-input
           v-model="deviceName"
           label="Device Name"
@@ -32,24 +34,57 @@
           filled
           class="q-mb-md"
         />
+
+        <!-- Add Device Button -->
         <q-btn
           @click="addDevice"
           label="Add Device"
           color="primary"
           class="q-mb-md"
         />
+
+        <!-- Name and highlight the table component -->
+        <h3 class="table-title">Device Consumption Table</h3>
         <div class="table-container">
-          <q-table :rows="devices" :columns="columns" row-key="name" />
+          <table class="custom-table">
+            <thead>
+              <tr>
+                <th>Device Name</th>
+                <th>Power Cons.' (Watts)</th>
+                <th>Hours Used per Day</th>
+                <th>Quantity</th>
+                <th>Daily Cons.' (kWh)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="device in devices" :key="device.name">
+                <td>{{ device.name }}</td>
+                <td>{{ device.power }}</td>
+                <td>{{ device.hours }}</td>
+                <td>{{ device.quantity }}</td>
+                <td>{{ device.daily.toFixed(2) }}</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
 
-        <div :style="{ color: selectedTextColor }">
-          <div>Total Daily Consumption: {{ totalDailyConsumption }} kWh</div>
-          <div>Total Weekly Consumption: {{ totalWeeklyConsumption }} kWh</div>
-          <div>
-            Total Monthly Consumption: {{ totalMonthlyConsumption }} kWh
+        <!-- Display total consumption -->
+        <div :style="{ color: selectedTextColor }" class="q-mb-md">
+          <div class="row">
+            <div class="text-black">Daily Consumption:</div>
+            <div class="q-ml-lg">{{ totalDailyConsumption }} kWh</div>
+          </div>
+          <div class="row">
+            <div class="text-black">Weekly Consumption:</div>
+            <div class="q-ml-lg">{{ totalWeeklyConsumption }} kWh</div>
+          </div>
+          <div class="row">
+            <div class="text-black">Total Monthly Consumption:</div>
+            <div class="q-ml-lg">{{ totalMonthlyConsumption }} kWh</div>
           </div>
         </div>
 
+        <!-- Input for remaining units in the token meter -->
         <q-input
           v-model.number="remainingUnits"
           type="number"
@@ -68,7 +103,7 @@
 
 <script>
 import { defineComponent, ref, computed } from "vue";
-import { QInput, QBtn, QTable } from "quasar";
+import { QInput, QBtn } from "quasar";
 
 export default defineComponent({
   name: "PageLight",
@@ -79,39 +114,6 @@ export default defineComponent({
     const quantity = ref(0);
     const remainingUnits = ref(0);
     const devices = ref([]);
-
-    const columns = [
-      {
-        name: "name",
-        label: "Device Name",
-        align: "left",
-        field: (row) => row.name,
-      },
-      {
-        name: "power",
-        label: "Power Consumption (Watts)",
-        align: "left",
-        field: (row) => row.power,
-      },
-      {
-        name: "hours",
-        label: "Hours Used per Day",
-        align: "left",
-        field: (row) => row.hours,
-      },
-      {
-        name: "quantity",
-        label: "Quantity",
-        align: "left",
-        field: (row) => row.quantity,
-      },
-      {
-        name: "daily",
-        label: "Daily Consumption (kWh)",
-        align: "left",
-        field: (row) => row.daily,
-      },
-    ];
 
     const totalDailyConsumption = computed(() => {
       return devices.value.reduce((sum, device) => sum + device.daily, 0);
@@ -126,32 +128,28 @@ export default defineComponent({
     });
 
     function addDevice() {
-      // Validation to prevent empty records
       if (
-        !deviceName.value ||
-        powerConsumption.value <= 0 ||
-        hoursUsed.value <= 0 ||
-        quantity.value <= 0
+        deviceName.value.trim() &&
+        powerConsumption.value > 0 &&
+        hoursUsed.value > 0 &&
+        quantity.value > 0
       ) {
-        alert("Please fill fields with valid values before adding.");
-        return;
+        const dailyConsumption =
+          (powerConsumption.value * hoursUsed.value * quantity.value) / 1000;
+        devices.value.push({
+          name: deviceName.value,
+          power: powerConsumption.value,
+          hours: hoursUsed.value,
+          quantity: quantity.value,
+          daily: dailyConsumption,
+        });
+
+        // Reset input fields
+        deviceName.value = "";
+        powerConsumption.value = 0;
+        hoursUsed.value = 0;
+        quantity.value = 0;
       }
-
-      const dailyConsumption =
-        (powerConsumption.value * hoursUsed.value * quantity.value) / 1000;
-
-      devices.value.push({
-        name: deviceName.value,
-        power: powerConsumption.value,
-        hours: hoursUsed.value,
-        quantity: quantity.value,
-        daily: dailyConsumption,
-      });
-
-      deviceName.value = "";
-      powerConsumption.value = 0;
-      hoursUsed.value = 0;
-      quantity.value = 0;
     }
 
     return {
@@ -160,7 +158,6 @@ export default defineComponent({
       hoursUsed,
       quantity,
       devices,
-      columns,
       totalDailyConsumption,
       totalWeeklyConsumption,
       totalMonthlyConsumption,
@@ -173,17 +170,41 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.q-radio {
-  margin-right: 10px;
+.table-title {
+  color: #2c3e50;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  text-align: center;
 }
+
 .table-container {
   max-width: 100%;
   overflow-x: auto;
-  margin-bottom: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.q-table {
-  table-layout: auto;
+.custom-table {
   width: 100%;
+  border-collapse: collapse;
+}
+
+.custom-table th,
+.custom-table td {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.custom-table th {
+  background-color: #acdbbe;
+  color: #333;
+}
+
+.custom-table tbody tr:hover {
+  background-color: #f9f9f9;
 }
 </style>
